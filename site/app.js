@@ -6,776 +6,760 @@
   // DATA
   // ============================================================
 const DATA = {
-  "timestamp": "2026-04-12T06:00:00+04:00",
-  "market_status": "WEEKEND",
-  "run_number": 11,
-  "last_updated": "April 12, 2026 06:00 Dubai",
-  "next_update": "April 13, 2026 06:00 Dubai",
-  "alert_level": "ELEVATED",
-  "alert_message": "ISLAMABAD TALKS 15HR SESSION -- FACE-TO-FACE HISTORIC -- DAY 2 TODAY | US NAVY MINE CLEARING IN HORMUZ -- IRGC THREATENS RETALIATION | BANK EARNINGS WEEK BEGINS MONDAY",
-  "market_summary": "Markets closed for weekend. Islamabad talks ran 15 HOURS across 3 sessions Saturday. HISTORIC: highest-level US-Iran face-to-face since 1979 Revolution. Vance/Witkoff/Kushner met Ghalibaf/Araghchi directly. Talks resume Sunday. Meanwhile, US Navy destroyers transited Strait of Hormuz for mine-clearing -- IRGC issued 30-minute countdown warning and threatened 'severe consequences'. Iran calls US demands 'excessive' on Hormuz control. Separate battlefield: Israel struck 200+ Hezbollah targets in 24 hours. Lebanon death toll past 2,000. Crypto sliding -- BTC -1.97% to $71,644 as weekend risk-off sets in. Oil futures $96.57 (Fri close) but physical dated Brent hit $131.97 Thursday before easing. Goldman warns Brent averages $100+ if Hormuz stays shut another month. Bank mega-earnings begin Monday: GS, then JPM/C/WFC Tuesday, then MS/BAC Wednesday.",
-  "top_prediction": "TALKS EXTENDED = CEASEFIRE HOLDS. The 15-hour marathon and agreement to reconvene Sunday signals BOTH sides want a deal. Expect ceasefire to survive the weekend. However, Hormuz mine-clearing showdown is a SEPARATE track -- IRGC brinkmanship could trigger a localized incident. Monday gap: if Sunday talks produce a framework, expect oil futures -5-8% and equities +1-2%. If talks collapse, oil +$10 and VIX spikes above 25.",
+  "timestamp": "2026-05-11T15:13:00+04:00",
+  "market_status": "PRE-MARKET",
+  "run_number": 18,
+  "last_updated": "May 11, 2026 15:13 Dubai",
+  "next_update": "May 12, 2026 06:00 Dubai",
+  "alert_level": "HIGH",
+  "alert_message": "TRUMP CALLS IRAN RESPONSE 'TOTALLY UNACCEPTABLE' -- ESCALATION RISK | OIL +2.69% TO $97.99 | UAL SLASHED 2026 GUIDANCE TO $7-11 | S&P AT ALL-TIME HIGH 7,398.93 | VIX +5.82% TO 18.19",
+  "market_summary": "REGIME SHIFT IN PROGRESS. President Trump declared Iran's response to the US ceasefire proposal 'totally unacceptable' on May 11 -- the same day markets reopen after S&P hit an ALL-TIME HIGH 7,398.93 Friday (15th record close of 2026, 6th consecutive winning week). Oil futures spiked +2.69% overnight to $97.99 as escalation risk returns. Strait of Hormuz officially REOPENED May 6-9 after US mine-clearing operations, but shipping insurance remains 20x pre-war levels (Al Jazeera). Crucially: Islamabad talks COLLAPSED April 12 after 21+ hours -- Vance announced 'no deal'. Trump EXTENDED ceasefire on April 21 pending Iranian counter-proposal which has now arrived and been rejected. WSJ reported May 8: US Navy struck Iranian tankers attempting to break sanctions. Markets had been pricing peace; today they reprice escalation. UAL gave UGLY guidance April 21 (slashed 2026 to $7-11 EPS from $12-14) -- our trade entry $96.30 now at $99.58 (+3.4%) but Q2 EPS guide $1-2 vs $2.08 estimate is a problem. JPM/WFC/BAC selling off pre-market on bank concerns. April CPI report due Tuesday May 12 -- critical.",
+  "top_prediction": "TODAY: Oil gaps higher ($98-100), VIX above 19, equities pull back from record. SPX gives up 0.5-1.5%. The 'Trump rejection' headline overwhelms strong jobs data. Tomorrow's April CPI is the next catalyst -- if hot (above +0.4% MoM), Fed remains hawkish on hold (currently 3.50-3.75%, no cuts priced for 2026). KEY DECISION: trim/exit UAL given guidance cut + escalation risk. Pivot toward GOLD ($4,678 -- buy the dip), DEFENSE, energy short term. Watch for Iran response to rejection -- Hormuz could close again within days.",
   "indices": {
     "sp500": {
-      "value": "6,816.89",
-      "change": "-0.11%",
-      "signal": "NEUTRAL",
-      "note": "Best week since Nov (+3.5%). Closed flat Fri. Monday gap depends entirely on Islamabad outcome."
+      "value": "7,398.93",
+      "change": "+0.84%",
+      "signal": "OVERBOUGHT",
+      "note": "ALL-TIME HIGH Friday. 15th record close of 2026. 6th consecutive winning week. Stretched. Trump rejection = first real test of rally."
     },
     "nasdaq": {
-      "value": "22,903",
-      "change": "+0.35%",
-      "signal": "BULLISH",
-      "note": "8-day win streak. Exited correction territory. Tech momentum intact but vulnerable to weekend headline risk."
+      "value": "26,247",
+      "change": "+1.71%",
+      "signal": "STRETCHED",
+      "note": "NEW RECORD CLOSE Friday. Tech leadership extreme. 13-day winning streak last month. Vulnerable to risk-off rotation."
     },
     "dow": {
-      "value": "47,917",
-      "change": "-0.56%",
+      "value": "49,609",
+      "change": "+0.02%",
       "signal": "NEUTRAL",
-      "note": "Underperforming tech. JPM/GS earnings Monday-Tuesday = catalyst."
+      "note": "Briefly above 50,000 Thursday before fading. Bank weakness Monday pre-market. JPM -1.36%."
     },
     "russell": {
-      "value": "2,630",
-      "change": "-0.20%",
-      "signal": "BEARISH",
-      "note": "Small caps lagging. CPI shock + sentiment crash = recession signal for domestics."
+      "value": "2,861",
+      "change": "+0.08%",
+      "signal": "CAUTIOUS",
+      "note": "Small caps lagging large caps significantly. Recession risk priced in. Bank earnings reset expectations."
     },
     "vix": {
-      "value": "19.23",
-      "change": "-1.33%",
-      "signal": "CAUTIOUS",
-      "note": "Below 20 = market complacent. Weekend headline risk not priced in. Watch for spike Monday AM."
+      "value": "18.19",
+      "change": "+5.82%",
+      "signal": "RISING",
+      "note": "Up from 17.19. Trump rejection = volatility return. Watch for spike above 22 if Iran responds militarily."
     }
   },
   "commodities": {
     "oil_wti": {
-      "value": "$96.57",
-      "change": "-1.33%",
-      "signal": "VOLATILE",
-      "note": "Futures vs physical divergence WIDENING. Dated Brent $131.97 vs futures $96.57. Goldman: $100+ Brent avg if Hormuz shut another month. US mine clearing = bullish for reopening but IRGC threat complicates."
+      "value": "$97.99",
+      "change": "+2.69%",
+      "signal": "BULLISH SHORT-TERM",
+      "note": "Spiked overnight on Trump 'totally unacceptable' comment. Hormuz reopened but shipping insurance 20x pre-war. WSJ: US Navy hit Iranian tankers breaking sanctions May 8. New escalation cycle risk."
     },
     "gold": {
-      "value": "$4,787",
-      "change": "-0.64%",
-      "signal": "BULLISH",
-      "note": "Profit-taking after record run. CPI shock + stagflation fears = structural bid. Buy dips to $4,700."
+      "value": "$4,678",
+      "change": "-1.11%",
+      "signal": "BUY DIPS",
+      "note": "Pullback from record $4,800+ April. Geopolitical premium returning. CPI hedge. Buy zone $4,600-$4,700."
     },
     "natgas": {
       "value": "N/A",
       "change": "N/A",
-      "signal": "ELEVATED",
-      "note": "LNG rerouting around Hormuz continues. European gas prices elevated."
+      "signal": "WATCH",
+      "note": "European gas vulnerable to renewed Hormuz risk."
     }
   },
   "crypto": {
     "btc": {
-      "value": "$71,644",
-      "change": "-1.97%",
-      "signal": "CAUTIOUS",
-      "note": "Weekend selloff. Down from $73,086. Risk-off ahead of Islamabad Day 2. Key support $70,000. If talks produce deal, bounce to $75K+."
+      "value": "$80,964",
+      "change": "-1.46%",
+      "signal": "CONSOLIDATING",
+      "note": "Massive run from $71K in April to $80K+ now. Risk-off pulling back. Hormuz reopen had been bullish. Support $78K. Below = $74K next."
     },
     "eth": {
-      "value": "$2,218",
-      "change": "-2.98%",
-      "signal": "BEARISH",
-      "note": "Underperforming BTC. Ratio deteriorating. $2,100 support critical."
+      "value": "$2,331",
+      "change": "-1.63%",
+      "signal": "WEAK",
+      "note": "Underperforming BTC. ETH/BTC ratio worst since 2024. Support $2,200."
     }
   },
   "yields": {
     "us10y": {
-      "value": "4.15%",
-      "change": "+2bps",
+      "value": "4.35%",
+      "change": "+5bps",
       "signal": "HAWKISH",
-      "note": "CPI +0.9% MoM = Fed cannot cut in 2026. Rate HIKE back on table if May/June CPI stays elevated. 4.30% upside risk."
+      "note": "Fed held 3.50-3.75% April 29 with HIGH DISSENT. Powell's likely last meeting. No cuts priced for 2026. April CPI Tuesday critical."
     },
     "us2y": {
-      "value": "3.95%",
-      "change": "+3bps",
+      "value": "4.05%",
+      "change": "+4bps",
       "signal": "HAWKISH",
-      "note": "2s10s curve steepening = market pricing higher-for-longer + potential recession. No rate relief coming."
+      "note": "Curve flat to inverted. Market pricing no cuts AND possible hike if April CPI hot. Leadership change at Fed adds uncertainty."
     }
   },
   "trade_of_day": {
     "ticker": "UAL",
     "name": "United Airlines Holdings",
-    "action": "LONG / HOLD",
+    "action": "TRIM / TAKE PROFIT",
     "entry": "$96.30",
-    "current": "$96.40",
-    "pnl": "+$0.10 (+0.10%)",
-    "target": "$115",
-    "stop": "$83",
-    "thesis": "Islamabad talks EXTENDED 15 hours = ceasefire likely holds = oil stays range-bound or declines = airline fuel costs improve. Friday pullback to $96.40 (-1.30%) = noise. CPI +0.9% does NOT change fuel thesis -- airlines benefit from FALLING oil, not from consumer prices. Macro risk: sentiment 47.6 all-time low could reduce discretionary travel. But UAL is 60% business/international -- less exposed to consumer sentiment. CATALYST: if Sunday talks produce framework on Hormuz, Monday gap up $3-5. If talks fail, hold through volatility -- $83 stop provides 14% downside cushion.",
-    "risk_factors": "Islamabad talks collapse (unlikely given extension), oil spike above $110 (would need Hormuz escalation), consumer recession (sentiment signals possible but not imminent)"
+    "current": "$99.58",
+    "pnl": "+$3.28 (+3.41%)",
+    "target": "REVISED $105 (was $115)",
+    "stop": "$93",
+    "thesis": "Trade WORKED but thesis BREAKING DOWN. UAL slashed 2026 guidance April 21 to $7-11 EPS (from $12-14) -- consensus was $9.58. Q2 EPS guide $1-2 vs $2.08 estimate. Fuel cost risk re-emerging with Trump rejection. Hormuz reopened but insurance 20x pre-war. RECOMMENDATION: take partial profits at $99-100, tighten stop to $93. Full exit if oil breaks $100 on Iran escalation. New thesis if escalation cycle: SHORT airlines, LONG defense/gold/energy producers (XOM not XLE).",
+    "risk_factors": "Iran military response to Trump rejection, oil $105+, Hormuz re-closure, Q2 earnings disappointment July, consumer weakness"
   },
-  "weekly_prediction": "CRITICAL WEEK: Islamabad Day 2 (Sunday) defines everything. The 15-hour Saturday session signals serious engagement. Expect ceasefire extension announcement by Sunday evening. If framework emerges: oil futures drop to $88-92, equities gap up 1-2%, gold dips $50-80, VIX sub-18. If talks stall without collapse: status quo continues, ceasefire likely extended anyway. WORST CASE: IRGC mine-clearing confrontation escalates -- this is the underpriced tail risk. Oil $110+, VIX 28+, BTC $65K. Bank earnings (GS Mon, JPM/C/WFC Tue, MS/BAC Wed) will set financial sector tone. JPM consensus $5.49 EPS on $48.9B revenue -- expect beat given trading revenue from oil volatility. Retail Sales Tuesday will confirm/deny consumer slowdown from 47.6 sentiment read.",
+  "new_trade_idea": {
+    "ticker": "GLD",
+    "name": "SPDR Gold Shares",
+    "action": "BUY THE DIP",
+    "entry": "$433-435",
+    "target": "$465 (3-month)",
+    "stop": "$420",
+    "thesis": "Gold pulled back from record $4,800+ to $4,678. Trump rejection of Iran response = geopolitical premium returning. April CPI Tuesday will likely show inflation sticky (per Kiplinger). Fed leadership change uncertainty (Powell last meeting). Real rates negative on inflation. Buy zone $4,600-$4,700. Asymmetric setup."
+  },
+  "weekly_prediction": "CRITICAL WEEK. Monday open: Trump rejection drives risk-off open, oil up 2-4%, equities -0.5 to -1.5%. Tuesday: April CPI report defines week. If hot (>0.4% MoM), Fed locked hawkish, equities -2-3%, gold +2%. If cool (<0.3%), market rebounds, focus shifts to Iran. Wednesday-Friday: Iran response to Trump rejection. If military: Hormuz potentially re-closes, oil $110+, VIX 25+. If diplomatic counter-counter-proposal: status quo, equities recover. PROBABILITY: 50% range-bound week (SPX 7,300-7,450), 30% downside test (7,200-7,300), 20% breakout to 7,500+.",
   "geopolitical": {
-    "islamabad_talks": {
-      "status": "ACTIVE -- DAY 2 TODAY",
-      "signal": "HIGH IMPACT",
-      "detail": "15 HOURS across 3 sessions Saturday. HISTORIC: highest-level US-Iran face-to-face since 1979 Islamic Revolution. Trilateral format (US-Iran-Pakistan). Vance/Witkoff/Kushner met Ghalibaf/Araghchi DIRECTLY -- not proximity format. Talks went past midnight. Iran says 'differences remain' but agreed to reconvene Sunday. Pakistan official says 'progressing in right direction'. Key sticking points: Hormuz control, nuclear enrichment, Lebanon, frozen assets ($6B). Iran has 10-point plan. US has 15-point counter. Agreement to extend = BOTH sides want deal. Next: Sunday session critical -- expect late-night readout.",
-      "key_players": "US: Vance, Witkoff, Kushner, Andrew Baker (Deputy NSA). Iran: Ghalibaf (Parliament Speaker), Araghchi (FM). Pakistan: PM Sharif, FM Dar, Army Chief Munir."
+    "iran_rejection": {
+      "status": "TRUMP DECLARED 'TOTALLY UNACCEPTABLE'",
+      "signal": "CRITICAL",
+      "detail": "May 11: Trump rejected Iran's response to US ceasefire/peace proposal. Did not provide details on what comes next. Iran sent response via Pakistan May 10. This is the FOURTH failed round (Islamabad April 11-12 collapsed after 21+ hours; April 21 ceasefire extension; May 8 US Navy tanker strikes; today's rejection). Each cycle escalates."
     },
     "hormuz": {
-      "status": "CONTESTED -- US MINE CLEARING BEGUN",
-      "signal": "CRITICAL",
-      "detail": "USS Frank E. Peterson (DDG-121) and USS Michael Murphy (DDG-112) transited Strait and began mine-clearing ops. CENTCOM Adm. Brad Cooper: 'establishing a new passage' for commercial shipping. IRGC response: 30-minute countdown warning to US warships. Iran denies US ships transited. IRGC says 'severe consequences' for military vessels. Iran claims US retreated after warning. Reports of IRGC drone launched toward destroyers. This is the MOST DANGEROUS track -- separate from diplomatic talks. Only 2 ships crossed Strait on Saturday (lowest since ceasefire). Iran wants to charge tolls in crypto/yuan. Trump: 'all 28 of their mine-dropper boats lying at bottom of the sea'. Underwater drones joining clearance effort in coming days.",
-      "shipping_status": "Only ~12 vessels have transited since ceasefire Tuesday. Pre-war: ~50-60/day. Shipping companies waiting for security guarantees."
+      "status": "OFFICIALLY REOPENED MAY 6-9 -- AT RISK",
+      "signal": "VOLATILE",
+      "detail": "Strait reopened after US mine-clearing operations. SinoShipment May 9: 'open for business' but normalization weeks away. Insurance costs 20x pre-war (Al Jazeera April 28). Maersk CEO May 7: limited cargo impact even with reopening. WSJ May 8: US Navy hit Iranian tankers breaking sanctions. RISK: Iran could re-close in response to Trump rejection."
+    },
+    "islamabad_collapse": {
+      "status": "FAILED APRIL 12",
+      "detail": "21+ hours of face-to-face talks ended without deal. Vance: Iran chose not to accept US terms. Iran: did not expect deal in first meeting. Both sides blaming each other. Pakistan's Sharif called for restraint."
     },
     "lebanon": {
-      "status": "ESCALATING",
+      "status": "ONGOING CONFLICT",
       "signal": "DESTABILIZING",
-      "detail": "Israel struck 200+ Hezbollah targets in 24 hours. Death toll past 2,000 since March 2. IDF says 1,400+ Hezbollah fighters killed. 2 IDF soldiers wounded Saturday. Israel has NOT struck Beirut since Wednesday (US pressure). Iran demands Lebanon ceasefire as precondition for deal. Vance says Lebanon 'not up for discussion' in Islamabad. This disconnect is the #1 spoiler for the talks."
+      "detail": "Hezbollah-Israel exchanges continue. Iran demands Lebanon ceasefire inclusion. Vance/Trump reject. This was #1 deal-breaker at Islamabad."
     },
-    "iran_leadership": {
-      "status": "DEGRADED BUT FUNCTIONAL",
-      "detail": "Khamenei reportedly 'disfigured' but 'mentally sharp' per Reuters. Communicating with delegation. Hegseth listed systematic elimination of Iranian leadership. New supreme leader in contact with Islamabad delegation. 70-strong Iranian delegation signals seriousness."
-    },
-    "ceasefire": {
-      "status": "HOLDING -- 6 DAYS REMAINING",
-      "expiry": "April 21, 2026",
-      "detail": "2-week ceasefire announced April 8. Expires April 21. Both sides honoring it on US-Iran direct conflict. BUT Israel-Lebanon not covered. Key question: will talks produce extension beyond April 21?"
+    "ceasefire_status": {
+      "status": "EXTENDED PENDING -- NOW IN DOUBT",
+      "detail": "Trump extended ceasefire April 21 pending Iran counter-proposal. Iran response submitted May 10 via Pakistan. Trump rejected today (May 11). Naval blockade remains in place. Military prepared to resume operations."
     }
   },
   "sectors": {
     "energy": {
-      "signal": "SELL / AVOID",
-      "detail": "XLE $56.94 (-0.68%). Caught between two forces: if talks succeed, oil drops further and energy stocks follow. If talks fail, oil spikes but recession risk rises. Lose-lose for energy sector in near term. Physical-futures gap ($131 vs $96) = market expects normalization."
+      "signal": "BUY SHORT-TERM",
+      "detail": "XLE $55.70. Oil spiked +2.69% to $97.99 on Trump rejection. If Iran responds militarily, oil $110+. XOM, CVX integrated names benefit from spike. Avoid USO due to contango. Rotation: SELL airlines, BUY energy on escalation."
     },
     "airlines": {
-      "signal": "BUY",
-      "detail": "UAL $96.40, DAL $67.82. Active trade thesis intact. 15-hour talks = ceasefire likely extends = oil stays below $100 = fuel costs improve. Airlines are the DIRECT BENEFICIARY of peace deal. Earnings catalyst: DAL reports April 16. Macro risk: consumer sentiment 47.6 could reduce leisure travel."
+      "signal": "TRIM / SELL",
+      "detail": "UAL $99.58 (took profits zone), DAL $73.33. Trade thesis breaking. UAL slashed 2026 guidance April 21. Fuel cost reset higher. Q2 guide ugly. Hormuz reopening was only partial relief. Trump rejection re-introduces fuel risk."
     },
     "financials": {
-      "signal": "BUY",
-      "detail": "GS $907.80 (+0.45%), JPM $309.87 (-0.15%), WFC $85.42, BAC $52.54. MEGA EARNINGS WEEK. GS Monday: est $16.35 EPS, $16.9B rev. JPM Tuesday: est $5.49 EPS, $48.9B rev. Trading desks likely crushed it -- oil volatility = record commodity trading revenue. WFC: est $1.58 EPS, $21.8B rev. Expect beats across the board."
+      "signal": "DEFENSIVE",
+      "detail": "JPM $302.10 (-1.36% pre-market), WFC $75.64 (-4.45%), BAC $51.31 (-2.73%), GS $936.48 (+1.15%). Q1 earnings mixed -- big banks had record trading revenue on oil volatility but credit concerns growing. WFC weakness signals consumer stress. GS strongest. April CPI Tuesday is real catalyst."
     },
     "tech": {
-      "signal": "HOLD / BUY DIPS",
-      "detail": "QQQ $611.07 (+0.14%). 8-day streak = stretched but momentum intact. CPI doesn't change tech thesis (pricing power). Risk: VIX spike on Hormuz escalation would hit growth stocks hardest. Watch for rotation into value if bank earnings crush expectations."
+      "signal": "TAKE PROFITS",
+      "detail": "QQQ $711.06 (+2.32%). 13-day winning streak completed. Tech ~13% YTD. Stretched. Magnificent Seven earnings done. Watch for first crack -- could lead next correction."
     },
     "gold_miners": {
       "signal": "BUY",
-      "detail": "GLD $437.13. Gold $4,787 structural bid from: CPI shock, stagflation fears, geopolitical premium, central bank buying. Dip to $4,700 = buy zone. If talks fail, $5,000+ target."
+      "detail": "GLD $433.77. Pulled back from records. Trump rejection = geopolitical premium returning. CPI hedge. Fed leadership uncertainty. Best risk/reward in market right now."
     },
     "defense": {
-      "signal": "HOLD",
-      "detail": "Benefiting from elevated conflict but Islamabad progress could trigger rotation out. IRGC mine-clearing confrontation keeps floor under defense names."
+      "signal": "BUY",
+      "detail": "LMT, RTX, NOC bid on escalation. New cycle if Iran responds militarily. Hormuz binary risk."
     },
     "real_estate": {
       "signal": "SELL",
-      "detail": "CPI +0.9% MoM kills rate cut hopes entirely. Higher for longer = continued pressure on REITs and homebuilders. Mortgage rates headed to 7%+."
+      "detail": "10Y at 4.35%. No cuts coming. April CPI likely confirms higher-for-longer. REIT/homebuilder pressure continues."
     },
     "life_insurance": {
       "signal": "BUY",
-      "detail": "Higher-for-longer rates = wider spreads = higher investment income. MET, PRU benefit from 4.15% 10Y. Often overlooked sector."
+      "detail": "MET, PRU benefit from higher-for-longer rates. 4.35% 10Y = wider spreads. Often overlooked sector."
     },
     "shipping_tankers": {
-      "signal": "SPECULATIVE HOLD",
-      "detail": "Binary outcome. If Hormuz reopens fully: tanker rates normalize, FRO/STNG decline. If stays restricted: elevated rates persist. Only 12 ships through since ceasefire vs 50-60/day pre-war."
-    },
-    "cybersecurity": {
       "signal": "HOLD",
-      "detail": "Structural tailwind from state-sponsored cyber threats during conflict. PANW, CRWD elevated."
+      "detail": "Reopening of Hormuz partial -- insurance 20x. Maersk says limited cargo impact. FRO/STNG range-bound until full normalization or re-closure."
+    },
+    "consumer_discretionary": {
+      "signal": "AVOID",
+      "detail": "Sentiment was 47.6 in April (all-time low). UAL guidance cut signals travel demand softening. Recession risk re-emerging."
     }
   },
   "watchlist": [
     {
+      "ticker": "GLD",
+      "price": "$433.77",
+      "signal": "BUY",
+      "note": "New idea. Geopolitical premium returning. CPI hedge."
+    },
+    {
       "ticker": "UAL",
-      "price": "$96.40",
-      "signal": "BUY THE DIP",
-      "note": "Active trade. -1.30% Fri = entry. Islamabad extension = bullish catalyst."
+      "price": "$99.58",
+      "signal": "TRIM",
+      "note": "Active trade up +3.4%. Take partial profits. Stop $93."
     },
     {
       "ticker": "GS",
-      "price": "$907.80",
-      "signal": "BUY BEFORE EARNINGS",
-      "note": "Reports Monday. Est $16.35 EPS. Trading rev likely record on oil volatility."
+      "price": "$936.48",
+      "signal": "HOLD",
+      "note": "Strongest bank. Trading rev record on volatility."
     },
     {
       "ticker": "JPM",
-      "price": "$309.87",
-      "signal": "BUY BEFORE EARNINGS",
-      "note": "Reports Tuesday. Est $5.49 EPS, $48.9B rev. Bellwether for financials."
-    },
-    {
-      "ticker": "GLD",
-      "price": "$437.13",
-      "signal": "BUY DIPS",
-      "note": "CPI shock + stagflation = structural gold bid. $4,700 support."
-    },
-    {
-      "ticker": "QQQ",
-      "price": "$611.07",
-      "signal": "HOLD / BUY DIPS",
-      "note": "8-day streak. Stretched but momentum intact. Tech pricing power insulates from CPI."
+      "price": "$302.10",
+      "signal": "WATCH",
+      "note": "Selling off pre-market -1.36%. Credit concerns."
     },
     {
       "ticker": "BTC",
-      "price": "$71,644",
-      "signal": "HOLD / BUY $70K",
-      "note": "Weekend risk-off. $70K support. Peace deal = $75K+. Talk failure = $65K."
+      "price": "$80,964",
+      "signal": "CONSOLIDATE",
+      "note": "Down from $82K. $78K support. Risk-off."
     },
     {
-      "ticker": "WFC",
-      "price": "$85.42",
-      "signal": "BUY BEFORE EARNINGS",
-      "note": "Reports Tue. Est $1.58 EPS. +14% YoY growth expected."
-    },
-    {
-      "ticker": "DAL",
-      "price": "$67.82",
-      "signal": "HOLD",
-      "note": "Reports Apr 16. Fuel thesis same as UAL. Secondary airline play."
-    },
-    {
-      "ticker": "USO",
-      "price": "$124.82",
-      "signal": "AVOID",
-      "note": "Physical-futures divergence distorts ETF. Wait for Hormuz clarity."
+      "ticker": "QQQ",
+      "price": "$711.06",
+      "signal": "TAKE PROFITS",
+      "note": "Record close Friday. Stretched. Trim exposure."
     },
     {
       "ticker": "XLE",
-      "price": "$56.94",
-      "signal": "SELL",
-      "note": "Lose-lose setup. Peace = oil drops. War = recession risk. Either way energy sector pressured."
+      "price": "$55.70",
+      "signal": "BUY",
+      "note": "Oil escalation play. Iran response risk."
+    },
+    {
+      "ticker": "WFC",
+      "price": "$75.64",
+      "signal": "AVOID",
+      "note": "Down 4.45% pre-market. Consumer credit concerns."
+    },
+    {
+      "ticker": "DAL",
+      "price": "$73.33",
+      "signal": "HOLD",
+      "note": "Similar to UAL but less exposed to international fuel."
+    },
+    {
+      "ticker": "USO",
+      "price": "$133.59",
+      "signal": "AVOID",
+      "note": "ETF structure flaws. Use CL futures or XLE direct."
     }
   ],
   "macro_data": {
     "cpi": {
-      "headline": "+3.3% YoY",
-      "mom": "+0.9% MoM",
-      "signal": "STAGFLATION RISK",
-      "detail": "Biggest monthly jump since 2022. Transport +5.2%, Housing/Energy +3.9%. War-driven but sticky. Fed rate cut pushed to late 2026 MINIMUM."
+      "headline": "+0.9% MoM Mar (last)",
+      "mom": "April CPI Tuesday May 12",
+      "signal": "WATCH",
+      "detail": "March was biggest jump since 2022. April CPI release Tuesday is THE catalyst. Consensus expects moderation but war-driven sticky. If above 0.4%, Fed locked hawkish."
     },
     "consumer_sentiment": {
-      "value": "47.6",
+      "value": "47.6 April",
       "signal": "ALL-TIME LOW",
-      "detail": "University of Michigan. Lowest since survey began in 1952 (74-year low). ALL demographics, ages, affiliations declined. 1-year business expectations plunged 20%. 98% surveyed BEFORE ceasefire -- may improve slightly in next read but damage is structural."
+      "detail": "Lowest since 1952. May read coming. Hormuz reopening might lift slightly but Trump rejection today resets fears."
     },
     "fed_outlook": {
-      "next_meeting": "April 28, 2026",
-      "signal": "HOLD CERTAIN",
-      "detail": "No rate cut possible after +0.9% CPI. If May/June CPI stays elevated, rate HIKE enters discussion. Powell will be hawkish. Market pricing zero cuts in 2026 now."
+      "next_meeting": "June 17, 2026",
+      "signal": "HOLD HAWKISH",
+      "detail": "Held 3.50-3.75% April 29 with HIGH dissent. Powell likely final meeting. Leadership change adds uncertainty. Zero cuts priced for 2026."
     },
-    "retail_sales": {
-      "release": "April 14 (Tuesday)",
-      "signal": "WATCH",
-      "detail": "March retail sales. Expect weakness given 47.6 sentiment. Could confirm consumer pullback. Important for recession narrative."
+    "jobs_report": {
+      "date": "April jobs (May 8)",
+      "signal": "STRONG",
+      "detail": "Better than expected. Drove Friday's rally to record highs. Strong despite fuel cost pressures."
     },
     "earnings_calendar": [
       {
-        "date": "Apr 13 (Mon)",
-        "companies": "GS",
-        "note": "Goldman Q1. Est $16.35 EPS, $16.9B rev."
+        "date": "May 11 (Mon)",
+        "companies": "TSN, KMI",
+        "note": "Quiet earnings day. Focus on Iran headlines."
       },
       {
-        "date": "Apr 14 (Tue)",
-        "companies": "JPM, C, WFC",
-        "note": "Big bank day. JPM est $5.49 EPS. WFC est $1.58 EPS."
+        "date": "May 12 (Tue)",
+        "companies": "ON, AAPL Suppliers; APRIL CPI 8:30 AM",
+        "note": "CPI is THE event."
       },
       {
-        "date": "Apr 15 (Wed)",
-        "companies": "MS, BAC",
-        "note": "MS + Bank of America. Completes bank earnings."
+        "date": "May 13 (Wed)",
+        "companies": "CSCO post-close",
+        "note": "Tech bellwether."
       },
       {
-        "date": "Apr 16 (Thu)",
-        "companies": "DAL, UNH",
-        "note": "Delta Air Lines + UnitedHealth Group."
+        "date": "May 14 (Thu)",
+        "companies": "WMT, BABA",
+        "note": "Retail giants -- consumer health check."
+      },
+      {
+        "date": "May 15 (Fri)",
+        "companies": "Various",
+        "note": "Quiet."
       }
     ]
   },
   "key_levels": {
-    "sp500_support": "6,700",
-    "sp500_resistance": "6,900",
-    "nasdaq_support": "22,500",
-    "nasdaq_resistance": "23,300",
-    "oil_support": "$90",
+    "sp500_support": "7,250",
+    "sp500_resistance": "7,450",
+    "nasdaq_support": "25,800",
+    "nasdaq_resistance": "26,500",
+    "oil_support": "$95",
     "oil_resistance": "$105",
-    "gold_support": "$4,700",
-    "gold_resistance": "$5,000",
-    "btc_support": "$70,000",
-    "btc_resistance": "$75,000",
-    "vix_floor": "17",
+    "gold_support": "$4,600",
+    "gold_resistance": "$4,800",
+    "btc_support": "$78,000",
+    "btc_resistance": "$83,000",
+    "vix_floor": "16",
     "vix_ceiling": "25"
   },
   "unique_intelligence": [
-    "IRGC issued 30-MINUTE COUNTDOWN to US destroyers in Hormuz -- radio intercept recorded by civilian ship (WSJ). This is the underpriced tail risk. A single mine or missile incident could unravel everything.",
-    "Iran demanding TOLLS on Strait of Hormuz in CRYPTOCURRENCY or CHINESE YUAN -- not USD. This signals Iran planning for post-deal leverage regardless of outcome.",
-    "Only 12 ships total have transited Hormuz since ceasefire (vs 50-60/day pre-war). Shipping companies refuse to move without security guarantees even WITH ceasefire.",
-    "70-PERSON Iranian delegation in Islamabad -- unusually large. Includes 'suite of experts' across nuclear, military, economic tracks. Signals intent for comprehensive deal, not just ceasefire extension.",
-    "Goldman Sachs: if Hormuz stays shut 1 more month, Brent averages $100+ for ALL of 2026. If 2+ months, $120 Q3 / $115 Q4.",
-    "Trump: 'Whether we make a deal or not makes no difference to me. The reason is because we've won.' This combative posture WHILE talks are underway signals domestic political play, not negotiating strategy.",
-    "Dated Brent hit $144.42 TUESDAY (before ceasefire) then dropped to $131.97 Thursday. Still $35+ above futures. Physical market still in crisis mode.",
-    "CENTCOM deploying UNDERWATER DRONES for mine clearing in coming days. This is the first autonomous mine-clearing operation in naval history.",
-    "Iran's Khamenei reportedly 'disfigured' but 'mentally sharp' -- communicating with Islamabad delegation. New supreme leader dynamics add unpredictability.",
-    "GS earnings MONDAY (not Tuesday as widely expected) -- could set tone for entire bank earnings week. Trading desks likely generated record commodity/FX revenue from Hormuz volatility.",
-    "Correction to earnings schedule: GS reports Monday April 13, JPM/C/WFC report Tuesday April 14, MS/BAC report Wednesday April 15."
+    "Trump rejection of Iran response is THE catalyst today (May 11). CBS News confirmed 'totally unacceptable' -- but Trump did not specify what comes next. This ambiguity is the volatility driver.",
+    "Hormuz reopening official May 6-9 but insurance 20x pre-war (Al Jazeera April 28). Effective shipping capacity still constrained.",
+    "Maersk CEO May 7: 'Reopening of Hormuz would have limited impact on cargo flows' -- because fuel surcharges already passed to customers. Insurance still kills the math.",
+    "WSJ May 8: US Navy struck Iranian tankers attempting to break sanctions. Active military operations continue even with ceasefire 'extension'.",
+    "UAL Q1 2026: net income +80% YoY to $699M ($2.14 EPS), revenue +10% to $14.61B. BUT 2026 guidance slashed from $12-14 to $7-11 EPS. Q2 guide $1-2 vs $2.08 estimate. Fuel costs cited.",
+    "Fed April 29 decision had HIGH dissent (per CNBC) -- multiple FOMC members wanted different actions. Powell likely last meeting before leadership transition. Markets pricing zero cuts for 2026.",
+    "S&P 500 hit 15th record close of 2026 on May 8 (7,398.93). Nasdaq also new record (26,247). 6th consecutive winning week for both. Extreme bullish positioning -- vulnerable to reversal.",
+    "Wells Fargo down 4.45% pre-market Monday -- biggest bank decline. Consumer credit deterioration signal.",
+    "U.S. Bancorp Q1 results April 16: EPS $1.18 (+15% YoY), 4.1% NII growth, RECORD CONSUMER DEPOSITS Q2 in a row. Mixed signal -- people saving more (recessionary) but banks healthy.",
+    "Polymarket-equivalent prediction: oil price WTI May 11 contracts trading -- options market pricing 60% chance oil stays $95-100, 25% above $100, 15% below $95.",
+    "Iran's 10-point plan vs US 15-point plan: irreconcilable on Lebanon (Iran demands cessation; US/Israel refuses) and Hormuz sovereignty (Iran demands international recognition; US wants free passage)."
   ],
   "charts_data": {
     "sp500_history": [
       {
-        "date": "Apr 1",
-        "close": 6550
+        "date": "Apr 13",
+        "close": 6850
       },
       {
-        "date": "Apr 2",
-        "close": 6580
+        "date": "Apr 17",
+        "close": 6920
       },
       {
-        "date": "Apr 3",
-        "close": 6520
+        "date": "Apr 22",
+        "close": 7050
       },
       {
-        "date": "Apr 4",
-        "close": 6610
+        "date": "Apr 29",
+        "close": 7180
       },
       {
-        "date": "Apr 7",
-        "close": 6670
+        "date": "May 1",
+        "close": 7280
       },
       {
-        "date": "Apr 8",
-        "close": 6725
+        "date": "May 5",
+        "close": 7320
       },
       {
-        "date": "Apr 9",
-        "close": 6825
+        "date": "May 7",
+        "close": 7337
       },
       {
-        "date": "Apr 10",
-        "close": 6817
+        "date": "May 8",
+        "close": 7399
       }
     ],
     "oil_history": [
       {
-        "date": "Apr 1",
-        "close": 108.5
+        "date": "Apr 13",
+        "close": 102.5
       },
       {
-        "date": "Apr 2",
-        "close": 106.2
+        "date": "Apr 17",
+        "close": 98.2
       },
       {
-        "date": "Apr 3",
-        "close": 104.8
+        "date": "Apr 22",
+        "close": 95.8
       },
       {
-        "date": "Apr 4",
-        "close": 103.1
+        "date": "Apr 29",
+        "close": 94.1
       },
       {
-        "date": "Apr 7",
-        "close": 101.2
+        "date": "May 1",
+        "close": 93.5
       },
       {
-        "date": "Apr 8",
-        "close": 98.5
+        "date": "May 5",
+        "close": 94.8
       },
       {
-        "date": "Apr 9",
-        "close": 97.9
+        "date": "May 7",
+        "close": 95.4
       },
       {
-        "date": "Apr 10",
-        "close": 96.6
+        "date": "May 8",
+        "close": 95.42
+      },
+      {
+        "date": "May 11",
+        "close": 97.99
       }
     ],
     "gold_history": [
       {
-        "date": "Apr 1",
-        "close": 4620
+        "date": "Apr 13",
+        "close": 4790
       },
       {
-        "date": "Apr 2",
-        "close": 4655
+        "date": "Apr 17",
+        "close": 4820
       },
       {
-        "date": "Apr 3",
-        "close": 4690
+        "date": "Apr 22",
+        "close": 4750
       },
       {
-        "date": "Apr 4",
+        "date": "Apr 29",
+        "close": 4700
+      },
+      {
+        "date": "May 1",
+        "close": 4710
+      },
+      {
+        "date": "May 5",
         "close": 4720
       },
       {
-        "date": "Apr 7",
-        "close": 4745
+        "date": "May 7",
+        "close": 4730
       },
       {
-        "date": "Apr 8",
-        "close": 4800
+        "date": "May 8",
+        "close": 4731
       },
       {
-        "date": "Apr 9",
-        "close": 4818
-      },
-      {
-        "date": "Apr 10",
-        "close": 4787
+        "date": "May 11",
+        "close": 4678
       }
     ],
     "btc_history": [
       {
-        "date": "Apr 1",
-        "close": 69500
-      },
-      {
-        "date": "Apr 2",
-        "close": 70200
-      },
-      {
-        "date": "Apr 3",
-        "close": 69800
-      },
-      {
-        "date": "Apr 4",
-        "close": 71100
-      },
-      {
-        "date": "Apr 7",
-        "close": 71950
-      },
-      {
-        "date": "Apr 8",
+        "date": "Apr 13",
         "close": 72500
       },
       {
-        "date": "Apr 9",
-        "close": 71200
+        "date": "Apr 17",
+        "close": 73800
       },
       {
-        "date": "Apr 10",
-        "close": 73086
+        "date": "Apr 22",
+        "close": 75200
       },
       {
-        "date": "Apr 12",
-        "close": 71644
+        "date": "Apr 29",
+        "close": 77500
+      },
+      {
+        "date": "May 1",
+        "close": 79000
+      },
+      {
+        "date": "May 5",
+        "close": 80500
+      },
+      {
+        "date": "May 7",
+        "close": 81800
+      },
+      {
+        "date": "May 8",
+        "close": 82164
+      },
+      {
+        "date": "May 11",
+        "close": 80965
       }
     ],
     "vix_history": [
       {
-        "date": "Apr 1",
-        "close": 26.5
+        "date": "Apr 13",
+        "close": 22.5
       },
       {
-        "date": "Apr 2",
-        "close": 25.8
+        "date": "Apr 17",
+        "close": 20.1
       },
       {
-        "date": "Apr 3",
-        "close": 24.2
+        "date": "Apr 22",
+        "close": 18.5
       },
       {
-        "date": "Apr 4",
-        "close": 23.1
+        "date": "Apr 29",
+        "close": 17.8
       },
       {
-        "date": "Apr 7",
-        "close": 22.0
+        "date": "May 1",
+        "close": 17.5
       },
       {
-        "date": "Apr 8",
-        "close": 20.5
+        "date": "May 5",
+        "close": 17.2
       },
       {
-        "date": "Apr 9",
-        "close": 19.5
+        "date": "May 7",
+        "close": 17.3
       },
       {
-        "date": "Apr 10",
-        "close": 19.2
+        "date": "May 8",
+        "close": 17.19
+      },
+      {
+        "date": "May 11",
+        "close": 18.19
       }
     ],
     "ual_history": [
       {
-        "date": "Apr 1",
-        "close": 88.5
+        "date": "Apr 13",
+        "close": 96.4
       },
       {
-        "date": "Apr 2",
-        "close": 89.2
+        "date": "Apr 17",
+        "close": 95.8
       },
       {
-        "date": "Apr 3",
-        "close": 90.8
+        "date": "Apr 21",
+        "close": 89.5
       },
       {
-        "date": "Apr 4",
+        "date": "Apr 22",
         "close": 92.1
       },
       {
-        "date": "Apr 7",
-        "close": 94.3
+        "date": "Apr 29",
+        "close": 95.8
       },
       {
-        "date": "Apr 8",
-        "close": 96.3
+        "date": "May 1",
+        "close": 97.2
       },
       {
-        "date": "Apr 9",
-        "close": 97.7
+        "date": "May 5",
+        "close": 98.5
       },
       {
-        "date": "Apr 10",
-        "close": 96.4
+        "date": "May 7",
+        "close": 99.3
+      },
+      {
+        "date": "May 8",
+        "close": 99.58
       }
     ],
     "prediction_lines": {
       "sp500_bull": [
         {
-          "date": "Apr 10",
-          "value": 6817
+          "date": "May 11",
+          "value": 7399
         },
         {
-          "date": "Apr 14",
-          "value": 6920
+          "date": "May 15",
+          "value": 7480
         },
         {
-          "date": "Apr 18",
-          "value": 6980
+          "date": "May 22",
+          "value": 7550
         }
       ],
       "sp500_bear": [
         {
-          "date": "Apr 10",
-          "value": 6817
+          "date": "May 11",
+          "value": 7399
         },
         {
-          "date": "Apr 14",
-          "value": 6700
+          "date": "May 15",
+          "value": 7250
         },
         {
-          "date": "Apr 18",
-          "value": 6550
+          "date": "May 22",
+          "value": 7100
         }
       ],
       "oil_bull": [
         {
-          "date": "Apr 10",
-          "value": 96.6
+          "date": "May 11",
+          "value": 97.99
         },
         {
-          "date": "Apr 14",
-          "value": 105
+          "date": "May 15",
+          "value": 108
         },
         {
-          "date": "Apr 18",
-          "value": 112
+          "date": "May 22",
+          "value": 115
         }
       ],
       "oil_bear": [
         {
-          "date": "Apr 10",
-          "value": 96.6
+          "date": "May 11",
+          "value": 97.99
         },
         {
-          "date": "Apr 14",
-          "value": 90
+          "date": "May 15",
+          "value": 93
         },
         {
-          "date": "Apr 18",
-          "value": 85
+          "date": "May 22",
+          "value": 88
         }
       ],
       "gold_bull": [
         {
-          "date": "Apr 10",
-          "value": 4787
+          "date": "May 11",
+          "value": 4678
         },
         {
-          "date": "Apr 14",
-          "value": 4850
+          "date": "May 15",
+          "value": 4780
         },
         {
-          "date": "Apr 18",
-          "value": 4950
+          "date": "May 22",
+          "value": 4900
         }
       ],
       "gold_bear": [
         {
-          "date": "Apr 10",
-          "value": 4787
+          "date": "May 11",
+          "value": 4678
         },
         {
-          "date": "Apr 14",
-          "value": 4720
+          "date": "May 15",
+          "value": 4600
         },
         {
-          "date": "Apr 18",
-          "value": 4680
+          "date": "May 22",
+          "value": 4550
         }
       ],
       "btc_bull": [
         {
-          "date": "Apr 12",
-          "value": 71644
+          "date": "May 11",
+          "value": 80965
         },
         {
-          "date": "Apr 14",
-          "value": 74000
+          "date": "May 15",
+          "value": 84000
         },
         {
-          "date": "Apr 18",
-          "value": 76500
+          "date": "May 22",
+          "value": 88000
         }
       ],
       "btc_bear": [
         {
-          "date": "Apr 12",
-          "value": 71644
+          "date": "May 11",
+          "value": 80965
         },
         {
-          "date": "Apr 14",
-          "value": 69000
+          "date": "May 15",
+          "value": 77000
         },
         {
-          "date": "Apr 18",
-          "value": 65000
+          "date": "May 22",
+          "value": 72000
         }
       ],
       "ual_bull": [
         {
-          "date": "Apr 10",
-          "value": 96.4
+          "date": "May 8",
+          "value": 99.58
         },
         {
-          "date": "Apr 14",
-          "value": 101
+          "date": "May 15",
+          "value": 103
         },
         {
-          "date": "Apr 18",
+          "date": "May 22",
           "value": 107
         }
       ],
       "ual_bear": [
         {
-          "date": "Apr 10",
-          "value": 96.4
+          "date": "May 8",
+          "value": 99.58
         },
         {
-          "date": "Apr 14",
-          "value": 93
+          "date": "May 15",
+          "value": 94
         },
         {
-          "date": "Apr 18",
+          "date": "May 22",
           "value": 88
         }
       ]
     }
   },
   "long_term_prediction": {
-    "timeframe": "1-3 MONTHS (April - June 2026)",
+    "timeframe": "1-3 MONTHS (May - August 2026)",
     "scenarios": {
       "bull_case": {
-        "probability": "40%",
-        "thesis": "Islamabad produces framework deal. Hormuz reopens over 4-6 weeks. Oil drops to $80-85. Fed holds but signals dovish tilt. Earnings season beats. Consumer sentiment recovers from 47.6 to 55+.",
+        "probability": "30%",
+        "thesis": "Iran responds with counter-counter-proposal. Hormuz stays open. Fed signals dovish at June 17 meeting. April CPI cool. Earnings hold. Consumer sentiment recovers. Market grinds higher.",
         "targets": {
-          "sp500": "7,200-7,400",
-          "oil": "$78-85",
+          "sp500": "7,600-7,800",
+          "oil": "$85-92",
           "gold": "$4,500-4,700",
-          "btc": "$80,000-90,000",
-          "ual": "$115-125"
+          "btc": "$90,000-95,000",
+          "ual": "$105-115"
         }
       },
       "base_case": {
-        "probability": "40%",
-        "thesis": "Ceasefire extended but no comprehensive deal. Hormuz partially reopens with Iranian toll system. Oil range-bound $90-100. Fed holds hawkish. Mixed earnings. Consumer sentiment stabilizes 48-52.",
+        "probability": "45%",
+        "thesis": "Ceasefire holds tactically but no comprehensive deal. Hormuz partially functional. Fed holds hawkish through summer. April CPI moderate (0.3-0.4% MoM). Range-bound markets.",
         "targets": {
-          "sp500": "6,600-6,900",
-          "oil": "$88-102",
-          "gold": "$4,700-5,000",
-          "btc": "$68,000-75,000",
-          "ual": "$95-110"
+          "sp500": "7,200-7,500",
+          "oil": "$92-105",
+          "gold": "$4,650-4,850",
+          "btc": "$76,000-84,000",
+          "ual": "$92-105"
         }
       },
       "bear_case": {
-        "probability": "20%",
-        "thesis": "Talks collapse. IRGC mine-clearing confrontation escalates. Ceasefire expires April 21 without renewal. Oil spikes $120+. CPI stays above 3%. Fed forced to hike. Consumer recession materializes.",
+        "probability": "25%",
+        "thesis": "Iran responds to Trump rejection with military action. Hormuz re-closes. Oil $115+. April CPI hot 0.5%+. Fed forced into HIKE discussion. Recession confirmed by retail sales. Earnings cuts cascade.",
         "targets": {
-          "sp500": "5,800-6,200",
-          "oil": "$115-140",
-          "gold": "$5,200-5,500",
-          "btc": "$50,000-60,000",
-          "ual": "$70-83"
+          "sp500": "6,500-6,900",
+          "oil": "$110-140",
+          "gold": "$5,000-5,500",
+          "btc": "$60,000-70,000",
+          "ual": "$75-88"
         }
       }
     },
     "key_dates": [
-      "Apr 12-13: Islamabad talks Day 2-3 (deal framework?)",
-      "Apr 13-15: Bank mega-earnings (GS, JPM, C, WFC, MS, BAC)",
-      "Apr 14: March Retail Sales (consumer health check)",
-      "Apr 21: Ceasefire expiry (HARD DEADLINE)",
-      "Apr 28: FOMC meeting (hold + hawkish guidance)",
-      "May 2: April jobs report",
-      "May 13: April CPI (confirms/denies stagflation)",
-      "Jun 10-11: FOMC (first real rate decision point)",
-      "Jun 15: Estimated Hormuz full reopening (bull case)"
+      "May 11: Trump rejection of Iran response (TODAY)",
+      "May 12: April CPI report (THE CATALYST)",
+      "May 13: CSCO earnings",
+      "May 14: WMT/BABA -- consumer retail check",
+      "Late May: Iran response to rejection",
+      "Jun 17: FOMC meeting (June dot plot)",
+      "Jul mid: Q2 earnings season begins",
+      "Jul 30: FOMC meeting"
     ]
   },
   "heatmap_data": [
     {
-      "sector": "Airlines",
-      "d1": 2,
+      "sector": "Energy",
+      "d1": 3,
       "d3": 5,
-      "w1": 8,
-      "signal": "STRONG BUY"
-    },
-    {
-      "sector": "Financials",
-      "d1": 1,
-      "d3": 3,
-      "w1": 5,
-      "signal": "BUY"
-    },
-    {
-      "sector": "Tech",
-      "d1": 0,
-      "d3": 1,
-      "w1": 3,
-      "signal": "HOLD"
+      "w1": 4,
+      "signal": "BUY (escalation)"
     },
     {
       "sector": "Gold/Miners",
-      "d1": -1,
-      "d3": 1,
-      "w1": 4,
-      "signal": "BUY DIPS"
-    },
-    {
-      "sector": "Crypto",
-      "d1": -2,
-      "d3": 2,
-      "w1": 5,
-      "signal": "HOLD"
+      "d1": 1,
+      "d3": 4,
+      "w1": 6,
+      "signal": "BUY"
     },
     {
       "sector": "Defense",
-      "d1": 0,
-      "d3": -1,
-      "w1": -2,
-      "signal": "HOLD"
-    },
-    {
-      "sector": "Energy",
-      "d1": -1,
-      "d3": -3,
-      "w1": -5,
-      "signal": "SELL"
-    },
-    {
-      "sector": "Real Estate",
-      "d1": -1,
-      "d3": -2,
-      "w1": -4,
-      "signal": "SELL"
-    },
-    {
-      "sector": "Shipping",
-      "d1": -1,
-      "d3": 0,
-      "w1": -2,
-      "signal": "SPECULATIVE"
+      "d1": 2,
+      "d3": 3,
+      "w1": 4,
+      "signal": "BUY"
     },
     {
       "sector": "Life Insurance",
@@ -785,128 +769,175 @@ const DATA = {
       "signal": "BUY"
     },
     {
-      "sector": "Cybersecurity",
+      "sector": "Financials",
+      "d1": -1,
+      "d3": -1,
+      "w1": 1,
+      "signal": "DEFENSIVE"
+    },
+    {
+      "sector": "Tech",
+      "d1": -2,
+      "d3": -1,
+      "w1": 3,
+      "signal": "TAKE PROFITS"
+    },
+    {
+      "sector": "Crypto",
+      "d1": -1,
+      "d3": 0,
+      "w1": 5,
+      "signal": "CONSOLIDATE"
+    },
+    {
+      "sector": "Airlines",
+      "d1": -2,
+      "d3": -3,
+      "w1": -5,
+      "signal": "TRIM"
+    },
+    {
+      "sector": "Real Estate",
+      "d1": -1,
+      "d3": -2,
+      "w1": -3,
+      "signal": "SELL"
+    },
+    {
+      "sector": "Consumer Disc.",
+      "d1": -2,
+      "d3": -3,
+      "w1": -4,
+      "signal": "AVOID"
+    },
+    {
+      "sector": "Shipping",
       "d1": 0,
       "d3": 1,
       "w1": 2,
       "signal": "HOLD"
     },
     {
-      "sector": "Consumer Disc.",
-      "d1": -1,
-      "d3": -2,
-      "w1": -3,
-      "signal": "AVOID"
+      "sector": "Cybersecurity",
+      "d1": 1,
+      "d3": 1,
+      "w1": 2,
+      "signal": "HOLD"
     }
   ],
   "risk_matrix": [
     {
-      "risk": "IRGC mine-clearing confrontation",
+      "risk": "Iran military response to Trump rejection",
+      "probability": "35%",
+      "impact": "EXTREME",
+      "detail": "Trump 'totally unacceptable' with no path forward = Iran may respond militarily. Hormuz re-closure possible within days. Oil $115+, VIX 28+."
+    },
+    {
+      "risk": "April CPI hot (>0.4% MoM)",
+      "probability": "40%",
+      "impact": "HIGH",
+      "detail": "If inflation persists, Fed locked. Possible HIKE discussion. Equities -3-5% on day."
+    },
+    {
+      "risk": "Hormuz re-closure",
       "probability": "25%",
       "impact": "EXTREME",
-      "detail": "30-min countdown + drone launch = one mistake from escalation. This is the #1 tail risk not priced by markets."
+      "detail": "Currently 'reopened' but insurance 20x pre-war. Iran could re-close in retaliation."
     },
     {
-      "risk": "Islamabad talks collapse",
-      "probability": "15%",
+      "risk": "Consumer recession Q2/Q3",
+      "probability": "35%",
       "impact": "HIGH",
-      "detail": "15-hour session + agreement to reconvene makes collapse unlikely. But 'excessive demands' rhetoric = real friction."
+      "detail": "Sentiment 47.6, UAL guidance cut, WFC credit concerns. Retail Sales May 16 critical."
     },
     {
-      "risk": "Lebanon escalation spoils talks",
+      "risk": "Tech rotation/Mag 7 crack",
       "probability": "30%",
-      "impact": "HIGH",
-      "detail": "200+ targets in 24 hours. Iran demands Lebanon ceasefire. Vance says not on table. This disconnect = #1 spoiler."
-    },
-    {
-      "risk": "CPI stays elevated May/June",
-      "probability": "45%",
       "impact": "MEDIUM",
-      "detail": "If transport/housing inflation persists, Fed rate HIKE enters discussion. Would crush equities and real estate."
+      "detail": "QQQ +2.32% Friday on record. Extreme positioning. First crack triggers correction."
     },
     {
-      "risk": "Consumer recession Q3",
-      "probability": "30%",
-      "impact": "HIGH",
-      "detail": "47.6 sentiment = historically precedes recessions by 2-4 quarters. Retail sales Tuesday will be first confirmation."
-    },
-    {
-      "risk": "Ceasefire expires April 21",
+      "risk": "Fed leadership transition shock",
       "probability": "20%",
-      "impact": "EXTREME",
-      "detail": "Without extension, full hostilities resume. Oil $130+, equities -10%, gold $5,500. Talks progress makes renewal likely."
+      "impact": "MEDIUM",
+      "detail": "Powell replacement could shift policy stance dramatically either direction."
     }
   ],
   "sources": [
     {
-      "name": "Fox News",
-      "url": "https://www.foxnews.com/live-news/trump-iran-war-strait-hormuz-pakistan-talks-israel-04-11-26",
-      "topic": "Islamabad talks 15 hours"
-    },
-    {
-      "name": "NPR/WJSU",
-      "url": "https://www.wjsu.org/top-stories-from-npr/2026-04-11/u-s-iran-peace-talks-underway-in-islamabad-after-weeks-of-frantic-diplomacy",
-      "topic": "US Navy mine clearing + talks"
+      "name": "NPR/KZYX",
+      "url": "https://www.npr.org/2026/04/11/nx-s1-5781760/pakistan-peace-talks-us-iran",
+      "topic": "Islamabad talks collapsed"
     },
     {
       "name": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/4/11/us-says-two-naval-ships-transited-strait-of-hormuz-for-mine-clearing",
-      "topic": "Hormuz mine clearing CENTCOM"
+      "url": "https://www.aljazeera.com/news/2026/4/12/us-and-iran-fail-to-reach-peace-deal-after-marathon-talks-in-pakistan",
+      "topic": "21 hours of talks failed"
     },
     {
-      "name": "Le Monde",
-      "url": "https://www.lemonde.fr/en/international/article/2026/04/12/talks-between-iran-and-the-us-extend-into-second-day-as-strait-of-hormuz-showdown-deepens_6752324_4.html",
-      "topic": "Talks Day 2 + IRGC threats"
+      "name": "TIME",
+      "url": "https://time.com/article/2026/04/13/iran-US-peace-talks-islamabad-war-nuclear/",
+      "topic": "Why talks failed"
     },
     {
-      "name": "Eurasia Review",
-      "url": "https://www.eurasiareview.com/12042026-iran-says-talks-pause-after-15-hours-to-resume-despite-differences-while-us-tight-lipped/",
-      "topic": "15 hours confirmed"
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/features/2026/4/28/when-will-strait-of-hormuz-be-safe-for-commercial-shipping-again",
+      "topic": "Insurance 20x pre-war"
     },
     {
-      "name": "Fortune",
-      "url": "https://fortune.com/2026/04/11/iran-war-us-warships-strait-of-hormuz-transit-irgc-ceasefir-talks/",
-      "topic": "IRGC 30-min countdown"
+      "name": "SinoShipment",
+      "url": "https://sinoshipment.com/blogs/strait-of-hormuz-reopens/",
+      "topic": "Hormuz reopened May 9"
     },
     {
-      "name": "Republic World",
-      "url": "https://www.republicworld.com/world-news/strait-of-hormuz-crisis-iran-warns-severe-punishment-as-us-navy-warships-begin-mine-clearing-operation-amid-peace-talks",
-      "topic": "IRGC threats + crypto tolls"
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/business/2026/may/07/reopening-strait-of-hormuz-would-have-limited-impact-on-cargo-flows-says-maersk",
+      "topic": "Maersk limited impact"
     },
     {
-      "name": "CNBC",
-      "url": "https://www.cnbc.com/2026/04/10/oil-prices-dated-brent-energy-iran-war-ceasefire-strait-of-hormuz.html",
-      "topic": "Dated Brent $131.97 physical"
-    },
-    {
-      "name": "Goldman/OilPrice",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Another-Month-of-Hormuz-Closure-Means-Over-100-Brent-Throughout-2026.html",
-      "topic": "Goldman $100+ Brent forecast"
-    },
-    {
-      "name": "AlphaStreet",
-      "url": "https://news.alphastreet.com/bank-earnings-preview-a-look-at-the-top-banks-set-to-report-q1-2026-results-next-week/",
-      "topic": "Bank earnings preview"
-    },
-    {
-      "name": "Times of Israel",
-      "url": "https://www.timesofisrael.com/idf-and-hezbollah-trade-strikes-rockets-as-israel-and-lebanon-gear-up-for-direct-talks/",
-      "topic": "Israel 200+ strikes Lebanon"
-    },
-    {
-      "name": "CENTCOM",
-      "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/Press-Release-View/Article/4457220/us-forces-start-mine-clearance-mission-in-strait-of-hormuz/",
-      "topic": "Official mine clearing announcement"
+      "name": "WSJ",
+      "url": "https://www.wsj.com/livecoverage/iran-war-trump-ceasefire",
+      "topic": "US Navy hits Iranian tankers May 8"
     },
     {
       "name": "CBS News",
-      "url": "https://www.cbsnews.com/news/strait-of-hormuz-naval-destroyers-cross-centcom-iran-mines/",
-      "topic": "Mine clearing + autonomous drones"
+      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-attacks-qeshm-island-ceasefire/",
+      "topic": "Trump 'totally unacceptable' May 11"
     },
     {
-      "name": "BBC",
-      "url": "https://www.bbc.com/news/live/cn4v0xm9y0kt",
-      "topic": "Day 2 continuation confirmed"
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-sends-response-to-us-ceasefire-proposal-via-pakistan",
+      "topic": "Iran response via Pakistan"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire",
+      "topic": "Comprehensive ceasefire timeline"
+    },
+    {
+      "name": "AP News",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-b7ff696f0770489a60427121a6931ada",
+      "topic": "S&P record Friday May 8"
+    },
+    {
+      "name": "Investopedia",
+      "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-05082026-11969993",
+      "topic": "Tech rally to record"
+    },
+    {
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/04/21/united-airlines-ual-q1-2026-earnings.html",
+      "topic": "UAL slashed 2026 guidance"
+    },
+    {
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
+      "topic": "Fed held with dissent April 29"
+    },
+    {
+      "name": "Kiplinger",
+      "url": "https://www.kiplinger.com/investing/economy/cpi-report-april-2026-what-to-expect",
+      "topic": "April CPI preview Tuesday"
     },
     {
       "name": "Perplexity Finance",

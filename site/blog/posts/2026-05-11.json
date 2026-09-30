@@ -1,0 +1,163 @@
+{
+  "date": "2026-05-11",
+  "slug": "2026-05-11",
+  "published_at": "2026-05-11T15:13:00+04:00",
+  "generated_by": "template",
+  "title": "TODAY: Oil gaps higher ($98-100), VIX above 19, equities pull back from record",
+  "excerpt": "REGIME SHIFT IN PROGRESS. President Trump declared Iran's response to the US ceasefire proposal 'totally unacceptable' on May 11 -- the same day markets reopen after S&P hit an ALL-TIME HIGH 7,398.93 Friday (15th record close of 2026, 6th consecutive winning week). Oil futures…",
+  "sentiment": "NEUTRAL",
+  "snapshot": [
+    {
+      "label": "S&P 500",
+      "value": "7,398.93",
+      "change": "+0.84%"
+    },
+    {
+      "label": "Nasdaq",
+      "value": "26,247",
+      "change": "+1.71%"
+    },
+    {
+      "label": "Dow",
+      "value": "49,609",
+      "change": "+0.02%"
+    },
+    {
+      "label": "WTI Crude",
+      "value": "$97.99",
+      "change": "+2.69%"
+    },
+    {
+      "label": "Gold",
+      "value": "$4,678",
+      "change": "-1.11%"
+    },
+    {
+      "label": "Bitcoin",
+      "value": "$80,964",
+      "change": "-1.46%"
+    },
+    {
+      "label": "US 10Y",
+      "value": "4.35%",
+      "change": "+5bps"
+    }
+  ],
+  "news": [
+    {
+      "headline": "Iran Rejection: TRUMP DECLARED 'TOTALLY UNACCEPTABLE'",
+      "detail": "May 11: Trump rejected Iran's response to US ceasefire/peace proposal. Did not provide details on what comes next. Iran sent response via Pakistan May 10. This is the FOURTH failed round (Islamabad April 11-12 collapsed after 21+ hours; April 21 ceasefire extension; May 8 US Navy tanker strikes; today's rejection). Each cycle escalates.",
+      "impact": "CRITICAL",
+      "source_url": ""
+    },
+    {
+      "headline": "Hormuz: OFFICIALLY REOPENED MAY 6-9 -- AT RISK",
+      "detail": "Strait reopened after US mine-clearing operations. SinoShipment May 9: 'open for business' but normalization weeks away. Insurance costs 20x pre-war (Al Jazeera April 28). Maersk CEO May 7: limited cargo impact even with reopening. WSJ May 8: US Navy hit Iranian tankers breaking sanctions. RISK: Iran could re-close in response to Trump rejection.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Islamabad Collapse: FAILED APRIL 12",
+      "detail": "21+ hours of face-to-face talks ended without deal. Vance: Iran chose not to accept US terms. Iran: did not expect deal in first meeting. Both sides blaming each other. Pakistan's Sharif called for restraint.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Lebanon: ONGOING CONFLICT",
+      "detail": "Hezbollah-Israel exchanges continue. Iran demands Lebanon ceasefire inclusion. Vance/Trump reject. This was #1 deal-breaker at Islamabad.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Ceasefire Status: EXTENDED PENDING -- NOW IN DOUBT",
+      "detail": "Trump extended ceasefire April 21 pending Iran counter-proposal. Iran response submitted May 10 via Pakistan. Trump rejected today (May 11). Naval blockade remains in place. Military prepared to resume operations.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Trump rejection of Iran response is THE catalyst today (May 11). CBS News confirmed 'totally unacceptable'",
+      "detail": "Trump rejection of Iran response is THE catalyst today (May 11). CBS News confirmed 'totally unacceptable' -- but Trump did not specify what comes next. This ambiguity is the volatility driver.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Hormuz reopening official May 6-9 but insurance 20x pre-war (Al Jazeera April 28). Effective shipping capacity still con",
+      "detail": "Hormuz reopening official May 6-9 but insurance 20x pre-war (Al Jazeera April 28). Effective shipping capacity still constrained.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Maersk CEO May 7: 'Reopening of Hormuz would have limited impact on cargo flows'",
+      "detail": "Maersk CEO May 7: 'Reopening of Hormuz would have limited impact on cargo flows' -- because fuel surcharges already passed to customers. Insurance still kills the math.",
+      "impact": "MODERATE",
+      "source_url": ""
+    }
+  ],
+  "predictions": {
+    "direction": "NEUTRAL",
+    "confidence": "MODERATE",
+    "horizon": "1-3 days",
+    "summary": "TODAY: Oil gaps higher ($98-100), VIX above 19, equities pull back from record. SPX gives up 0.5-1.5%. The 'Trump rejection' headline overwhelms strong jobs data. Tomorrow's April CPI is the next catalyst -- if hot (above +0.4% MoM), Fed remains hawkish on hold (currently 3.50-3.75%, no cuts priced for 2026). KEY DECISION: trim/exit UAL given guidance cut + escalation risk. Pivot toward GOLD ($4,678 -- buy the dip), DEFENSE, energy short term. Watch for Iran response to rejection -- Hormuz could close again within days.",
+    "bull_case": "Iran responds with counter-counter-proposal. Hormuz stays open. Fed signals dovish at June 17 meeting. April CPI cool. Earnings hold. Consumer sentiment recovers. Market grinds higher.",
+    "bear_case": "Iran responds to Trump rejection with military action. Hormuz re-closes. Oil $115+. April CPI hot 0.5%+. Fed forced into HIKE discussion. Recession confirmed by retail sales. Earnings cuts cascade.",
+    "key_levels": "SP500 SUPPORT: 7,250 | SP500 RESISTANCE: 7,450 | NASDAQ SUPPORT: 25,800 | NASDAQ RESISTANCE: 26,500 | OIL SUPPORT: $95 | OIL RESISTANCE: $105 | GOLD SUPPORT: $4,600 | GOLD RESISTANCE: $4,800 | BTC SUPPORT: $78,000 | BTC RESISTANCE: $83,000 | VIX FLOOR: 16 | VIX CEILING: 25"
+  },
+  "trade_idea": {
+    "ticker": "UAL",
+    "name": "United Airlines Holdings",
+    "action": "TRIM / TAKE PROFIT",
+    "entry": "$96.30",
+    "target": "REVISED $105 (was $115)",
+    "stop": "$93",
+    "confidence": "MODERATE",
+    "rationale": "Trade WORKED but thesis BREAKING DOWN. UAL slashed 2026 guidance April 21 to $7-11 EPS (from $12-14) -- consensus was $9.58. Q2 EPS guide $1-2 vs $2.08 estimate. Fuel cost risk re-emerging with Trump rejection. Hormuz reopened but insurance 20x pre-war. RECOMMENDATION: take partial profits at $99-100, tighten stop to $93. Full exit if oil breaks $100 on Iran escalation. New thesis if escalation cycle: SHORT airlines, LONG defense/gold/energy producers (XOM not XLE)."
+  },
+  "watchlist": [
+    {
+      "ticker": "GLD",
+      "signal": "BUY",
+      "note": "New idea. Geopolitical premium returning. CPI hedge."
+    },
+    {
+      "ticker": "UAL",
+      "signal": "TRIM",
+      "note": "Active trade up +3.4%. Take partial profits. Stop $93."
+    },
+    {
+      "ticker": "GS",
+      "signal": "HOLD",
+      "note": "Strongest bank. Trading rev record on volatility."
+    },
+    {
+      "ticker": "JPM",
+      "signal": "WATCH",
+      "note": "Selling off pre-market -1.36%. Credit concerns."
+    },
+    {
+      "ticker": "BTC",
+      "signal": "CONSOLIDATE",
+      "note": "Down from $82K. $78K support. Risk-off."
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "TAKE PROFITS",
+      "note": "Record close Friday. Stretched. Trim exposure."
+    },
+    {
+      "ticker": "XLE",
+      "signal": "BUY",
+      "note": "Oil escalation play. Iran response risk."
+    },
+    {
+      "ticker": "WFC",
+      "signal": "AVOID",
+      "note": "Down 4.45% pre-market. Consumer credit concerns."
+    }
+  ],
+  "scorecard": {
+    "previous_call": "UAL LONG / HOLD",
+    "outcome": "N/A",
+    "notes": "Automated grading requires Claude mode."
+  },
+  "sources": []
+}
