@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cielo Capital — Geopolitical Intelligence Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./blog.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+<div class="scanline-overlay"></div>
+
+<div class="dashboard">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="./cielo-logo.svg" alt="Cielo Capital" class="sidebar-logo-img" width="110" height="46">
+      <div>
+        <div class="logo-text">FORECAST</div>
+        <div class="logo-subtext">Intelligence Platform</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="nav-item active" data-view="overview" href="#overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span class="nav-label">Overview</span>
+      </a>
+      <a class="nav-item" data-view="markets" href="#markets">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <span class="nav-label">Markets</span>
+      </a>
+      <a class="nav-item" data-view="geopolitics" href="#geopolitics">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="nav-label">Geopolitics</span>
+      </a>
+      <a class="nav-item" data-view="contracts" href="#contracts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="nav-label">Gov Contracts</span>
+      </a>
+      <a class="nav-item" data-view="legislation" href="#legislation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <span class="nav-label">Legislation</span>
+      </a>
+      <a class="nav-item" data-view="worldmap" href="#worldmap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        <span class="nav-label">World Map</span>
+      </a>
+      <a class="nav-item" data-view="xsignals" href="#xsignals">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="nav-label">X Signals</span>
+      </a>
+      <a class="nav-item" data-view="trades" href="#trades">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span class="nav-label">Congressional Trades</span>
+      </a>
+      <a class="nav-item" data-view="intel" href="#intel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span class="nav-label">Deep Intel</span>
+      </a>
+      <a class="nav-item" data-view="macrointel" href="#macrointel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        <span class="nav-label">Macro Intel</span>
+      </a>
+      <a class="nav-item" data-view="charts" href="#charts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/><line x1="1" y1="22" x2="23" y2="22"/><line x1="1" y1="1" x2="1" y2="22"/></svg>
+        <span class="nav-label">Charts</span>
+      </a>
+      <a class="nav-item" data-view="longterm" href="#longterm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span class="nav-label">Long-Term</span>
+      </a>
+      <a class="nav-item" data-view="blog" href="#blog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+        <span class="nav-label">Blog</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="scan-time">Last Scan: <span id="lastScanTime">20:14 UTC</span></div>
+      <div class="data-sources"><span class="dot"></span> <span>Data Sources: 15 Active</span></div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle sidebar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <span class="page-title" id="pageTitle">Overview</span>
+    </div>
+    <div class="topbar-right">
+      <div class="topbar-icon" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="topbar-icon" aria-label="Notifications">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="badge-count">3</span>
+      </div>
+      <div class="user-avatar" title="Cielo Capital">CC</div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main" id="mainContent">
+
+    <!-- ======== OVERVIEW VIEW ======== -->
+    <div class="view active" id="view-overview">
+
+      <!-- 1. EARTH HERO BANNER -->
+      <div class="earth-hero">
+        <div class="earth-hero-bg"></div>
+        <div class="earth-hero-gradient"></div>
+        <div class="earth-hero-content">
+          <div class="earth-hero-brand">
+            <img src="./cielo-logo.svg" alt="Cielo Capital" class="hero-logo-img" width="180" height="75">
+            <div class="earth-hero-title">FORECAST</div>
+          </div>
+          <div class="earth-hero-meta">
+            <span class="earth-hero-subtitle">Geopolitical Intelligence &amp; Market Forecast</span>
+            <span class="earth-hero-date" id="heroDate">March 9, 2026 &mdash; 00:57 UTC+4</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. SCROLLING LIVE UPDATES TICKER -->
+      <div class="live-ticker">
+        <div class="live-ticker-track" id="liveTickerTrack"></div>
+      </div>
+
+      <!-- 3. TRADE OF THE DAY -->
+      <div class="trade-of-day">
+        <div class="trade-of-day-header">
+          <span class="tod-title">Trade of the Day</span>
+          <span class="badge badge-green">ACTIVE</span>
+        </div>
+        <div class="trade-of-day-body">
+          <div class="trade-chart-panel">
+            <div class="trade-chart-wrapper">
+              <canvas id="tradeOfDayChart"></canvas>
+            </div>
+          </div>
+          <div class="trade-details-panel" id="tradeDetailsPanel"></div>
+        </div>
+      </div>
+
+      <!-- 3.25 PREDICTION SUMMARY -->
+      <div class="prediction-summary" id="predictionSummary"></div>
+
+      <!-- 3.5 STOCKS TO WATCH -->
+      <div class="stocks-to-watch">
+        <div class="stw-header">
+          <span class="stw-title">STOCKS TO WATCH — NEXT 1-3 DAYS</span>
+          <span class="badge badge-teal">SWING TRADE</span>
+        </div>
+        <div class="stw-grid" id="stocksToWatchGrid"></div>
+      </div>
+
+      <!-- 3.6 SECTOR RADAR -->
+      <div class="sector-radar">
+        <div class="stw-header">
+          <span class="stw-title">SECTOR RADAR</span>
+          <span class="badge badge-blue">UNIQUE SECTORS</span>
+        </div>
+        <div class="sector-radar-track" id="sectorRadarTrack"></div>
+      </div>
+
+      <!-- 4. SECTOR DIRECTION CARDS -->
+      <div class="forecast-hero">
+        <div class="forecast-header">
+          <div class="forecast-title-row">
+            <h2 class="forecast-title" style="font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;font-size:var(--text-lg)">Sector Direction</h2>
+            <span class="forecast-date" id="forecastDate">March 9, 2026</span>
+          </div>
+          <div class="forecast-outlook" id="forecastOutlook">
+            <span class="outlook-badge risk-off">RISK-OFF</span>
+            <span class="outlook-desc" style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.03em">Extreme fear, Hormuz closure, active conflict</span>
+          </div>
+        </div>
+        <div class="direction-cards" id="directionCards"></div>
+      </div>
+
+      <!-- 5. KPI ROW -->
+      <div class="kpi-row" id="kpiRow"></div>
+
+      <!-- 6. SENTIMENT -->
+      <div class="sentiment-row">
+        <div class="sentiment-badge bearish" id="sentimentBadge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+          BEARISH
+        </div>
+        <span class="sentiment-label">Market Sentiment &mdash; Fear &amp; Greed Index: 13 (Extreme Fear)</span>
+      </div>
+
+      <!-- 7. TWO COLUMNS -->
+      <div class="two-col">
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Market Movers</span>
+          </div>
+          <div class="section-body">
+            <div class="table-scroll" id="marketMoversTable"></div>
+          </div>
+        </div>
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Geopolitical Alerts</span>
+            <span class="badge badge-red">LIVE</span>
+          </div>
+          <div class="section-body">
+            <div class="signal-feed" id="signalFeed"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORECAST DETAIL SECTION (secondary) -->
+      <div class="forecast-hero" style="margin-top:var(--space-5)">
+        <div class="forecast-charts-row">
+          <div class="chart-container">
+            <div class="chart-title">Treasury yield curve</div>
+            <div class="chart-wrapper" style="height:260px;">
+              <canvas id="yieldCurveChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <div class="chart-title">Key level monitor</div>
+            <div class="chart-wrapper" style="height:260px;">
+              <canvas id="keyLevelChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Daily stock picks</span>
+            <span class="badge badge-teal">March 9</span>
+          </div>
+          <div class="section-body">
+            <div class="table-scroll" id="stockPicksTable"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. CONGRESSIONAL TRADES -->
+      <div class="section-card" style="margin-top:var(--space-5)">
+        <div class="section-header">
+          <span class="section-title">Congressional Trades</span>
+          <span class="badge badge-gold">Recent</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="overviewTradesTable"></div>
+        </div>
+      </div>
+
+      <!-- 8.5 SUBSCRIBE FORM -->
+      <div class="subscribe-section" id="subscribeSection">
+        <div class="subscribe-border">
+          <div class="subscribe-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="subscribe-title">DAILY INTELLIGENCE BRIEFING</span>
+          </div>
+          <p class="subscribe-desc">Receive the CIELO Forecast delivered to your inbox every morning at 06:00 GST. Geopolitical intelligence, swing trade signals, chart predictions, and high-priority alerts from 15 data sources.</p>
+          <form class="subscribe-form" id="subscribeForm" onsubmit="return handleSubscribe(event)">
+            <div class="subscribe-input-row">
+              <input type="email" id="subscribeEmail" class="subscribe-input" placeholder="ENTER EMAIL ADDRESS" required autocomplete="email" spellcheck="false">
+              <button type="submit" class="subscribe-btn" id="subscribeBtn">
+                <span class="subscribe-btn-text">SUBSCRIBE</span>
+                <span class="subscribe-btn-loading" style="display:none">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </span>
+              </button>
+            </div>
+            <div class="subscribe-status" id="subscribeStatus"></div>
+          </form>
+          <div class="subscribe-meta">
+            <span>FREE</span>
+            <span>&middot;</span>
+            <span>DAILY 06:00 GST</span>
+            <span>&middot;</span>
+            <span>UNSUBSCRIBE ANYTIME</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. FOOTER -->
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-sources">Data Sources: Perplexity Finance &middot; SEC EDGAR &middot; FRED &middot; ApeWisdom &middot; NWS &middot; USASpending &middot; Congress.gov &middot; Federal Register &middot; X/Twitter &middot; US Treasury &middot; IMF &middot; World Bank &middot; BLS</div>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== MARKETS VIEW ======== -->
+    <div class="view" id="view-markets">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Markets
+        </h1>
+      </div>
+
+      <!-- TICKER TAPE -->
+      <div class="ticker-tape">
+        <div class="ticker-track" id="tickerTape"></div>
+      </div>
+
+      <!-- SPY CHART -->
+      <div class="chart-container">
+        <div class="chart-title">SPY — S&P 500 ETF (30-Day)</div>
+        <div class="chart-wrapper">
+          <canvas id="spyChart"></canvas>
+        </div>
+      </div>
+
+      <!-- SECTOR COMPARISON -->
+      <div class="chart-container">
+        <div class="chart-title">Sector Performance Comparison</div>
+        <div class="chart-wrapper" style="height: 200px;">
+          <canvas id="sectorChart"></canvas>
+        </div>
+      </div>
+
+      <!-- FULL TICKER TABLE -->
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">All Tickers</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="fullTickerTable"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== GEOPOLITICS VIEW ======== -->
+    <div class="view" id="view-geopolitics">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Geopolitical Intelligence
+        </h1>
+      </div>
+
+      <!-- INLINE MAP -->
+      <div class="map-container" id="geoMapContainer">
+        <div id="geoMapSvg" style="height:400px;width:100%;"></div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot" style="background: var(--color-red);"></span> Active Conflict</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--color-orange);"></span> Elevated Risk</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--color-gold);"></span> Monitoring</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--color-primary);"></span> Stable</div>
+        </div>
+      </div>
+
+      <!-- EVENT TIMELINE -->
+      <div class="section-card" style="margin-bottom: var(--space-5);">
+        <div class="section-header">
+          <span class="section-title">Event Timeline</span>
+        </div>
+        <div class="section-body padded">
+          <div class="timeline" id="eventTimeline"></div>
+        </div>
+      </div>
+
+      <!-- RISK MATRIX -->
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Risk Assessment Matrix</span>
+        </div>
+        <div class="section-body padded">
+          <div class="risk-matrix">
+            <div class="axis-label"></div>
+            <div class="axis-label">Moderate Probability</div>
+            <div class="axis-label">High Probability</div>
+            <div class="axis-label" style="writing-mode: vertical-lr; transform: rotate(180deg);">High Impact</div>
+            <div class="risk-cell risk-medium">
+              <div class="risk-title">Oil Supply Disruption</div>
+              <div class="risk-desc">Strait of Hormuz blockade risk. Oil +12% already pricing in partial disruption.</div>
+            </div>
+            <div class="risk-cell risk-high">
+              <div class="risk-title">Regional Escalation</div>
+              <div class="risk-desc">Israel-Iran direct conflict expanding. US radar infrastructure destroyed. 5-8yr rebuild timeline.</div>
+            </div>
+            <div class="axis-label" style="writing-mode: vertical-lr; transform: rotate(180deg);">Low Impact</div>
+            <div class="risk-cell risk-low">
+              <div class="risk-title">Diplomatic Resolution</div>
+              <div class="risk-desc">Iranian FM signals willingness to de-escalate under conditions. Low probability near-term.</div>
+            </div>
+            <div class="risk-cell risk-medium">
+              <div class="risk-title">Defense Spending Surge</div>
+              <div class="risk-desc">Congressional authorization for emergency defense spending. LMT, RTX, PLTR rally continues.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== GOV CONTRACTS VIEW ======== -->
+    <div class="view" id="view-contracts">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Government Contracts
+        </h1>
+      </div>
+      <p class="section-desc">Federal contract awards from USASpending. Major defense, space, energy, and IT service contracts tracked in real time.</p>
+
+      <!-- Summary Banner -->
+      <div class="contracts-summary" id="contractsSummary"></div>
+
+      <!-- Charts Row -->
+      <div class="contracts-charts-row">
+        <div class="chart-container">
+          <div class="chart-title">Top 5 contractors by award amount</div>
+          <div class="chart-wrapper" style="height:240px;">
+            <canvas id="contractorsBarChart"></canvas>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Awards by agency</div>
+          <div class="chart-wrapper" style="height:240px;">
+            <canvas id="agencyDoughnutChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Contracts Table -->
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Major contract awards</span>
+          <span class="badge badge-teal" id="contractCountBadge">14 contracts</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="contractsTable"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== LEGISLATION VIEW ======== -->
+    <div class="view" id="view-legislation">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Legislation &amp; Regulation
+        </h1>
+      </div>
+      <p class="section-desc">Tracking defense, AI, trade, and sanctions-related bills from Congress.gov and regulatory actions from the Federal Register.</p>
+
+      <div class="sub-section-title">Recent Bills</div>
+      <div class="section-card" style="margin-bottom: var(--space-5);">
+        <div class="section-body">
+          <div class="table-scroll" id="billsTable"></div>
+        </div>
+      </div>
+
+      <div class="sub-section-title">Federal Register</div>
+      <div class="section-card">
+        <div class="section-body">
+          <div class="table-scroll" id="fedRegTable"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== WORLD MAP VIEW ======== -->
+    <div class="view" id="view-worldmap">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          World Map — Threat Assessment
+        </h1>
+      </div>
+
+      <div class="worldmap-layout">
+        <!-- Map + Threats side panel -->
+        <div class="worldmap-main">
+          <div class="map-container" id="worldMapContainer" style="min-height: 500px;">
+            <div id="worldMapSvg" style="height:550px;width:100%;"></div>
+            <div class="map-tooltip" id="mapTooltip"></div>
+            <div class="map-legend">
+              <div class="legend-item"><span class="legend-dot" style="background: var(--color-red);"></span> Active Conflict</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--color-orange);"></span> Elevated Risk</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--color-gold);"></span> Monitoring</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--color-primary);"></span> Stable / Allied</div>
+              <div class="legend-item"><span class="legend-dot" style="background: none; border: 1.5px dashed #60a5fa; width:7px; height:7px;"></span> Shipping Route</div>
+            </div>
+          </div>
+        </div>
+        <div class="worldmap-sidebar">
+          <div class="section-card">
+            <div class="section-header">
+              <span class="section-title">Active threats</span>
+              <span class="badge badge-red">LIVE</span>
+            </div>
+            <div class="section-body">
+              <div class="threat-list" id="threatList"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping & Maritime Intel -->
+      <div class="shipping-section">
+        <div class="sub-section-title">Shipping &amp; maritime intelligence</div>
+
+        <!-- Shipping Impact Stats -->
+        <div class="shipping-stats" id="shippingStats"></div>
+
+        <!-- Chokepoint Status -->
+        <div class="chokepoint-grid" id="chokepointGrid"></div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== X SIGNALS VIEW ======== -->
+    <div class="view" id="view-xsignals">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          X Signals Intelligence
+        </h1>
+      </div>
+
+      <div class="filter-chips" id="xFilterChips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="conflict">Conflict</button>
+        <button class="chip" data-filter="markets">Markets</button>
+        <button class="chip" data-filter="defense">Defense</button>
+        <button class="chip" data-filter="regulation">Regulation</button>
+      </div>
+
+      <div class="two-col" style="grid-template-columns: 1fr 280px;">
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Signal Feed</span>
+            <span class="badge badge-red">LIVE</span>
+          </div>
+          <div class="section-body" id="xSignalFeed"></div>
+        </div>
+
+        <div>
+          <div class="section-card">
+            <div class="section-header">
+              <span class="section-title">Monitored Accounts</span>
+            </div>
+            <div class="section-body padded">
+              <div class="monitored-list">
+                <div class="monitored-item"><span class="monitored-dot"></span> @Osint613</div>
+                <div class="monitored-item"><span class="monitored-dot"></span> @clashreport</div>
+                <div class="monitored-item"><span class="monitored-dot"></span> @WhaleInsider</div>
+                <div class="monitored-item"><span class="monitored-dot"></span> @sentdefender</div>
+                <div class="monitored-item"><span class="monitored-dot"></span> @unusual_whales</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== CONGRESSIONAL TRADES VIEW ======== -->
+    <div class="view" id="view-trades">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Follow the Money — Congressional Trades
+        </h1>
+      </div>
+
+      <div class="trades-summary" id="tradesSummary"></div>
+
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Recent Politician Trades</span>
+          <span class="badge badge-gold">Last 30 Days</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="fullTradesTable"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== DEEP INTEL VIEW ======== -->
+    <div class="view" id="view-intel">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Deep Intel
+        </h1>
+      </div>
+      <p class="section-desc">Aggregated intelligence from SEC EDGAR, FRED, Reddit/WSB, NWS, and earnings calendars. Updated daily at 06:00 Dubai.</p>
+
+      <!-- MACRO INDICATORS (FRED) -->
+      <div class="sub-section-title">Macro Indicators &mdash; FRED</div>
+      <div class="macro-grid" id="macroGrid"></div>
+
+      <!-- RETAIL SENTIMENT (WSB) -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Retail Sentiment &mdash; WallStreetBets</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Trending Tickers (r/wallstreetbets)</span>
+          <span class="badge badge-orange">LIVE</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="wsbTable"></div>
+        </div>
+      </div>
+      <div class="crypto-sentiment-row" id="cryptoSentiment" style="margin-top:var(--space-3)"></div>
+
+      <!-- INSIDER TRADES (SEC EDGAR) -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Insider Trades &mdash; SEC EDGAR</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Recent Form 4 Filings</span>
+          <span class="badge badge-gold">SEC</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="insiderTradesTable"></div>
+        </div>
+      </div>
+
+      <!-- WEATHER DISRUPTION ALERTS (NWS) -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Weather &amp; Supply Chain Disruption &mdash; NWS</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Active Alerts — Port States (TX, NY, LA, CA, GA, SC, FL)</span>
+          <span class="badge badge-red">LIVE</span>
+        </div>
+        <div class="section-body padded">
+          <div id="weatherAlertsList"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-sources">Data Sources: SEC EDGAR &middot; FRED &middot; ApeWisdom &middot; NWS &middot; Perplexity Finance</div>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+
+    <!-- ======== MACRO INTELLIGENCE VIEW ======== -->
+    <div class="view" id="view-macrointel">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          Macro Intelligence
+        </h1>
+      </div>
+      <p class="section-desc">Real-time fiscal intelligence from US Treasury, IMF/World Bank global forecasts, BLS inflation tracking, and upcoming earnings catalysts.</p>
+
+      <!-- NATIONAL DEBT TRACKER -->
+      <div class="sub-section-title">National Debt Tracker &mdash; US Treasury</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">US National Debt</span>
+          <span class="badge badge-red">LIVE</span>
+        </div>
+        <div class="section-body padded" id="nationalDebtPanel"></div>
+      </div>
+
+      <!-- DEFICIT & SPENDING -->
+      <div class="mi-two-col" style="margin-top:var(--space-4)">
+        <div class="chart-container">
+          <div class="chart-title">Federal Receipts vs Outlays (FY2026)</div>
+          <div class="chart-wrapper" style="height:260px;">
+            <canvas id="deficitChart"></canvas>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">Avg Interest Rates on US Debt</div>
+          <div class="chart-wrapper" style="height:260px;">
+            <canvas id="interestRatesChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEFENSE SPENDING BURN RATE -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Defense Spending Burn Rate &mdash; DoD Military</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Department of Defense Outlays</span>
+          <span class="badge badge-gold">TREASURY MTS</span>
+        </div>
+        <div class="section-body padded" id="defenseSpendingPanel"></div>
+      </div>
+
+      <!-- GLOBAL GDP FORECASTS -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Global GDP Forecasts &mdash; IMF / World Bank</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">GDP Growth Forecasts (% YoY)</span>
+          <span class="badge badge-blue">IMF WEO</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="gdpForecastTable"></div>
+        </div>
+      </div>
+
+      <!-- CPI / INFLATION TRACKER -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Inflation Tracker &mdash; Bureau of Labor Statistics</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Consumer Price Index (CPI-U)</span>
+          <span class="badge badge-orange">BLS</span>
+        </div>
+        <div class="section-body padded" id="cpiTracker"></div>
+      </div>
+
+      <!-- EARNINGS CALENDAR -->
+      <div class="sub-section-title" style="margin-top:var(--space-5)">Earnings Calendar &mdash; This Week</div>
+      <div class="section-card">
+        <div class="section-header">
+          <span class="section-title">Upcoming Earnings Reports</span>
+          <span class="badge badge-teal">WEEK OF MAR 10</span>
+        </div>
+        <div class="section-body">
+          <div class="table-scroll" id="earningsCalendar"></div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-sources">Data Sources: US Treasury Fiscal Data &middot; IMF WEO &middot; World Bank &middot; BLS &middot; Perplexity Finance</div>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== CHARTS VIEW ======== -->
+    <div class="view" id="view-charts">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/><line x1="1" y1="22" x2="23" y2="22"/></svg>
+          Prediction Charts &mdash; AI Analysis
+        </h1>
+      </div>
+      <p class="section-desc">10 high-conviction trade setups with AI-predicted price trajectories, trendlines, support/resistance levels, and stop losses. Based on analysis of 15+ data sources.</p>
+
+      <div class="charts-grid" id="chartsGrid"></div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-sources">Data Sources: Perplexity Finance &middot; SEC EDGAR &middot; FRED &middot; ApeWisdom &middot; USASpending &middot; IMF &middot; BLS</div>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== LONG-TERM VIEW ======== -->
+    <div class="view" id="view-longterm">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Long-Term Predictions &mdash; 1-3 Month Horizon
+        </h1>
+      </div>
+      <p class="section-desc">Stocks that haven't signaled yet but have high-probability catalysts over the next 1-3 months. Each chart shows 3 scenario paths (bull/base/bear) with trigger conditions and catalyst timelines. Designed for swing traders positioning ahead of the move.</p>
+
+      <div class="lt-overview-box">
+        <div class="lt-overview-header">
+          <span class="lt-overview-label">METHODOLOGY</span>
+        </div>
+        <div class="lt-overview-text">
+          These picks are selected by cross-referencing 15+ data sources: congressional trades, government contracts, FDA pipeline, geopolitical signals, shipping data, macro indicators, WSB sentiment, and sector momentum. The goal is to identify stocks where a catalyst exists but hasn't been priced in yet. Each scenario includes a probability-weighted trigger condition and target price.
+        </div>
+      </div>
+
+      <div class="lt-charts-grid" id="longtermGrid"></div>
+
+      <div class="dashboard-footer">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <div class="footer-sources">Data Sources: Perplexity Finance &middot; SEC EDGAR &middot; FRED &middot; USASpending &middot; Federal Register &middot; NWS &middot; IMF &middot; BLS &middot; ApeWisdom</div>
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+
+    <!-- ======== BLOG VIEW ======== -->
+    <div class="view" id="view-blog">
+      <div class="view-header">
+        <h1>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+          Daily Brief &mdash; News &amp; Predictions
+        </h1>
+      </div>
+      <p class="section-desc">Published every morning: the stories moving markets, a 1-3 day prediction summary, a trade idea, and a scorecard on the previous call.</p>
+
+      <div class="blog-root" id="blogRoot"></div>
+
+      <div class="dashboard-footer">
+        <div class="footer-brand">CIELO CAPITAL FORECAST v2.0 | Powered by Cielo Capital</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="./app.js"></script>
+<script src="./blog.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

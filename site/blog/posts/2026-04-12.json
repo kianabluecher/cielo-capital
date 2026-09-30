@@ -1,0 +1,163 @@
+{
+  "date": "2026-04-12",
+  "slug": "2026-04-12",
+  "published_at": "2026-04-12T06:00:00+04:00",
+  "generated_by": "template",
+  "title": "Talks Extended = Ceasefire Holds",
+  "excerpt": "Markets closed for weekend. Islamabad talks ran 15 HOURS across 3 sessions Saturday. HISTORIC: highest-level US-Iran face-to-face since 1979 Revolution. Vance/Witkoff/Kushner met Ghalibaf/Araghchi directly. Talks resume Sunday. Meanwhile, US Navy destroyers transited Strait of…",
+  "sentiment": "NEUTRAL",
+  "snapshot": [
+    {
+      "label": "S&P 500",
+      "value": "6,816.89",
+      "change": "-0.11%"
+    },
+    {
+      "label": "Nasdaq",
+      "value": "22,903",
+      "change": "+0.35%"
+    },
+    {
+      "label": "Dow",
+      "value": "47,917",
+      "change": "-0.56%"
+    },
+    {
+      "label": "WTI Crude",
+      "value": "$96.57",
+      "change": "-1.33%"
+    },
+    {
+      "label": "Gold",
+      "value": "$4,787",
+      "change": "-0.64%"
+    },
+    {
+      "label": "Bitcoin",
+      "value": "$71,644",
+      "change": "-1.97%"
+    },
+    {
+      "label": "US 10Y",
+      "value": "4.15%",
+      "change": "+2bps"
+    }
+  ],
+  "news": [
+    {
+      "headline": "Islamabad Talks: ACTIVE -- DAY 2 TODAY",
+      "detail": "15 HOURS across 3 sessions Saturday. HISTORIC: highest-level US-Iran face-to-face since 1979 Islamic Revolution. Trilateral format (US-Iran-Pakistan). Vance/Witkoff/Kushner met Ghalibaf/Araghchi DIRECTLY -- not proximity format. Talks went past midnight. Iran says 'differences remain' but agreed to reconvene Sunday. Pakistan official says 'progressing in right direction'. Key sticking points: Hormuz control, nuclear enrichment, Lebanon, frozen assets ($6B). Iran has 10-point plan. US has 15-point counter. Agreement to extend = BOTH sides want deal. Next: Sunday session critical -- expect late-night readout.",
+      "impact": "HIGH",
+      "source_url": ""
+    },
+    {
+      "headline": "Hormuz: CONTESTED -- US MINE CLEARING BEGUN",
+      "detail": "USS Frank E. Peterson (DDG-121) and USS Michael Murphy (DDG-112) transited Strait and began mine-clearing ops. CENTCOM Adm. Brad Cooper: 'establishing a new passage' for commercial shipping. IRGC response: 30-minute countdown warning to US warships. Iran denies US ships transited. IRGC says 'severe consequences' for military vessels. Iran claims US retreated after warning. Reports of IRGC drone launched toward destroyers. This is the MOST DANGEROUS track -- separate from diplomatic talks. Only 2 ships crossed Strait on Saturday (lowest since ceasefire). Iran wants to charge tolls in crypto/yuan. Trump: 'all 28 of their mine-dropper boats lying at bottom of the sea'. Underwater drones joining clearance effort in coming days.",
+      "impact": "CRITICAL",
+      "source_url": ""
+    },
+    {
+      "headline": "Lebanon: ESCALATING",
+      "detail": "Israel struck 200+ Hezbollah targets in 24 hours. Death toll past 2,000 since March 2. IDF says 1,400+ Hezbollah fighters killed. 2 IDF soldiers wounded Saturday. Israel has NOT struck Beirut since Wednesday (US pressure). Iran demands Lebanon ceasefire as precondition for deal. Vance says Lebanon 'not up for discussion' in Islamabad. This disconnect is the #1 spoiler for the talks.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Iran Leadership: DEGRADED BUT FUNCTIONAL",
+      "detail": "Khamenei reportedly 'disfigured' but 'mentally sharp' per Reuters. Communicating with delegation. Hegseth listed systematic elimination of Iranian leadership. New supreme leader in contact with Islamabad delegation. 70-strong Iranian delegation signals seriousness.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Ceasefire: HOLDING -- 6 DAYS REMAINING",
+      "detail": "2-week ceasefire announced April 8. Expires April 21. Both sides honoring it on US-Iran direct conflict. BUT Israel-Lebanon not covered. Key question: will talks produce extension beyond April 21?",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "IRGC issued 30-MINUTE COUNTDOWN to US destroyers in Hormuz",
+      "detail": "IRGC issued 30-MINUTE COUNTDOWN to US destroyers in Hormuz -- radio intercept recorded by civilian ship (WSJ). This is the underpriced tail risk. A single mine or missile incident could unravel everything.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Iran demanding TOLLS on Strait of Hormuz in CRYPTOCURRENCY or CHINESE YUAN",
+      "detail": "Iran demanding TOLLS on Strait of Hormuz in CRYPTOCURRENCY or CHINESE YUAN -- not USD. This signals Iran planning for post-deal leverage regardless of outcome.",
+      "impact": "MODERATE",
+      "source_url": ""
+    },
+    {
+      "headline": "Only 12 ships total have transited Hormuz since ceasefire (vs 50-60/day pre-war). Shipping companies refuse to move with",
+      "detail": "Only 12 ships total have transited Hormuz since ceasefire (vs 50-60/day pre-war). Shipping companies refuse to move without security guarantees even WITH ceasefire.",
+      "impact": "MODERATE",
+      "source_url": ""
+    }
+  ],
+  "predictions": {
+    "direction": "NEUTRAL",
+    "confidence": "MODERATE",
+    "horizon": "1-3 days",
+    "summary": "TALKS EXTENDED = CEASEFIRE HOLDS. The 15-hour marathon and agreement to reconvene Sunday signals BOTH sides want a deal. Expect ceasefire to survive the weekend. However, Hormuz mine-clearing showdown is a SEPARATE track -- IRGC brinkmanship could trigger a localized incident. Monday gap: if Sunday talks produce a framework, expect oil futures -5-8% and equities +1-2%. If talks collapse, oil +$10 and VIX spikes above 25.",
+    "bull_case": "Islamabad produces framework deal. Hormuz reopens over 4-6 weeks. Oil drops to $80-85. Fed holds but signals dovish tilt. Earnings season beats. Consumer sentiment recovers from 47.6 to 55+.",
+    "bear_case": "Talks collapse. IRGC mine-clearing confrontation escalates. Ceasefire expires April 21 without renewal. Oil spikes $120+. CPI stays above 3%. Fed forced to hike. Consumer recession materializes.",
+    "key_levels": "SP500 SUPPORT: 6,700 | SP500 RESISTANCE: 6,900 | NASDAQ SUPPORT: 22,500 | NASDAQ RESISTANCE: 23,300 | OIL SUPPORT: $90 | OIL RESISTANCE: $105 | GOLD SUPPORT: $4,700 | GOLD RESISTANCE: $5,000 | BTC SUPPORT: $70,000 | BTC RESISTANCE: $75,000 | VIX FLOOR: 17 | VIX CEILING: 25"
+  },
+  "trade_idea": {
+    "ticker": "UAL",
+    "name": "United Airlines Holdings",
+    "action": "LONG / HOLD",
+    "entry": "$96.30",
+    "target": "$115",
+    "stop": "$83",
+    "confidence": "MODERATE",
+    "rationale": "Islamabad talks EXTENDED 15 hours = ceasefire likely holds = oil stays range-bound or declines = airline fuel costs improve. Friday pullback to $96.40 (-1.30%) = noise. CPI +0.9% does NOT change fuel thesis -- airlines benefit from FALLING oil, not from consumer prices. Macro risk: sentiment 47.6 all-time low could reduce discretionary travel. But UAL is 60% business/international -- less exposed to consumer sentiment. CATALYST: if Sunday talks produce framework on Hormuz, Monday gap up $3-5. If talks fail, hold through volatility -- $83 stop provides 14% downside cushion."
+  },
+  "watchlist": [
+    {
+      "ticker": "UAL",
+      "signal": "BUY THE DIP",
+      "note": "Active trade. -1.30% Fri = entry. Islamabad extension = bullish catalyst."
+    },
+    {
+      "ticker": "GS",
+      "signal": "BUY BEFORE EARNINGS",
+      "note": "Reports Monday. Est $16.35 EPS. Trading rev likely record on oil volatility."
+    },
+    {
+      "ticker": "JPM",
+      "signal": "BUY BEFORE EARNINGS",
+      "note": "Reports Tuesday. Est $5.49 EPS, $48.9B rev. Bellwether for financials."
+    },
+    {
+      "ticker": "GLD",
+      "signal": "BUY DIPS",
+      "note": "CPI shock + stagflation = structural gold bid. $4,700 support."
+    },
+    {
+      "ticker": "QQQ",
+      "signal": "HOLD / BUY DIPS",
+      "note": "8-day streak. Stretched but momentum intact. Tech pricing power insulates from CPI."
+    },
+    {
+      "ticker": "BTC",
+      "signal": "HOLD / BUY $70K",
+      "note": "Weekend risk-off. $70K support. Peace deal = $75K+. Talk failure = $65K."
+    },
+    {
+      "ticker": "WFC",
+      "signal": "BUY BEFORE EARNINGS",
+      "note": "Reports Tue. Est $1.58 EPS. +14% YoY growth expected."
+    },
+    {
+      "ticker": "DAL",
+      "signal": "HOLD",
+      "note": "Reports Apr 16. Fuel thesis same as UAL. Secondary airline play."
+    }
+  ],
+  "scorecard": {
+    "previous_call": "",
+    "outcome": "N/A",
+    "notes": "Automated grading requires Claude mode."
+  },
+  "sources": []
+}
